@@ -78,6 +78,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/wrudy/Desktop/printf/ft_atoi.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/printf/ft_bzero.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/printf/ft_calloc.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/printf/ft_isdigit.c">
 			<Option target="printf"/>
 		</Unit>
@@ -88,6 +97,9 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/printf/ft_printf.h">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/printf/ft_strchr.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/printf/ft_strdup.c">
@@ -112,6 +124,9 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/printf/parse.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/printf/process_specifiers.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/printf/process_types.c">

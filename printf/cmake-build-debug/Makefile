@@ -123,6 +123,87 @@ printf/fast:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
 .PHONY : printf/fast
 
+ft_atoi.o: ft_atoi.c.o
+
+.PHONY : ft_atoi.o
+
+# target to build an object file
+ft_atoi.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_atoi.c.o
+.PHONY : ft_atoi.c.o
+
+ft_atoi.i: ft_atoi.c.i
+
+.PHONY : ft_atoi.i
+
+# target to preprocess a source file
+ft_atoi.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_atoi.c.i
+.PHONY : ft_atoi.c.i
+
+ft_atoi.s: ft_atoi.c.s
+
+.PHONY : ft_atoi.s
+
+# target to generate assembly for a file
+ft_atoi.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_atoi.c.s
+.PHONY : ft_atoi.c.s
+
+ft_bzero.o: ft_bzero.c.o
+
+.PHONY : ft_bzero.o
+
+# target to build an object file
+ft_bzero.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_bzero.c.o
+.PHONY : ft_bzero.c.o
+
+ft_bzero.i: ft_bzero.c.i
+
+.PHONY : ft_bzero.i
+
+# target to preprocess a source file
+ft_bzero.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_bzero.c.i
+.PHONY : ft_bzero.c.i
+
+ft_bzero.s: ft_bzero.c.s
+
+.PHONY : ft_bzero.s
+
+# target to generate assembly for a file
+ft_bzero.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_bzero.c.s
+.PHONY : ft_bzero.c.s
+
+ft_calloc.o: ft_calloc.c.o
+
+.PHONY : ft_calloc.o
+
+# target to build an object file
+ft_calloc.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_calloc.c.o
+.PHONY : ft_calloc.c.o
+
+ft_calloc.i: ft_calloc.c.i
+
+.PHONY : ft_calloc.i
+
+# target to preprocess a source file
+ft_calloc.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_calloc.c.i
+.PHONY : ft_calloc.c.i
+
+ft_calloc.s: ft_calloc.c.s
+
+.PHONY : ft_calloc.s
+
+# target to generate assembly for a file
+ft_calloc.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_calloc.c.s
+.PHONY : ft_calloc.c.s
+
 ft_isdigit.o: ft_isdigit.c.o
 
 .PHONY : ft_isdigit.o
@@ -203,6 +284,33 @@ ft_printf.s: ft_printf.c.s
 ft_printf.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_printf.c.s
 .PHONY : ft_printf.c.s
+
+ft_strchr.o: ft_strchr.c.o
+
+.PHONY : ft_strchr.o
+
+# target to build an object file
+ft_strchr.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_strchr.c.o
+.PHONY : ft_strchr.c.o
+
+ft_strchr.i: ft_strchr.c.i
+
+.PHONY : ft_strchr.i
+
+# target to preprocess a source file
+ft_strchr.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_strchr.c.i
+.PHONY : ft_strchr.c.i
+
+ft_strchr.s: ft_strchr.c.s
+
+.PHONY : ft_strchr.s
+
+# target to generate assembly for a file
+ft_strchr.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_strchr.c.s
+.PHONY : ft_strchr.c.s
 
 ft_strdup.o: ft_strdup.c.o
 
@@ -420,6 +528,33 @@ parse.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse.c.s
 .PHONY : parse.c.s
 
+process_specifiers.o: process_specifiers.c.o
+
+.PHONY : process_specifiers.o
+
+# target to build an object file
+process_specifiers.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_specifiers.c.o
+.PHONY : process_specifiers.c.o
+
+process_specifiers.i: process_specifiers.c.i
+
+.PHONY : process_specifiers.i
+
+# target to preprocess a source file
+process_specifiers.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_specifiers.c.i
+.PHONY : process_specifiers.c.i
+
+process_specifiers.s: process_specifiers.c.s
+
+.PHONY : process_specifiers.s
+
+# target to generate assembly for a file
+process_specifiers.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_specifiers.c.s
+.PHONY : process_specifiers.c.s
+
 process_types.o: process_types.c.o
 
 .PHONY : process_types.o
@@ -483,6 +618,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... printf"
+	@echo "... ft_atoi.o"
+	@echo "... ft_atoi.i"
+	@echo "... ft_atoi.s"
+	@echo "... ft_bzero.o"
+	@echo "... ft_bzero.i"
+	@echo "... ft_bzero.s"
+	@echo "... ft_calloc.o"
+	@echo "... ft_calloc.i"
+	@echo "... ft_calloc.s"
 	@echo "... ft_isdigit.o"
 	@echo "... ft_isdigit.i"
 	@echo "... ft_isdigit.s"
@@ -492,6 +636,9 @@ help:
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
+	@echo "... ft_strchr.o"
+	@echo "... ft_strchr.i"
+	@echo "... ft_strchr.s"
 	@echo "... ft_strdup.o"
 	@echo "... ft_strdup.i"
 	@echo "... ft_strdup.s"
@@ -516,6 +663,9 @@ help:
 	@echo "... parse.o"
 	@echo "... parse.i"
 	@echo "... parse.s"
+	@echo "... process_specifiers.o"
+	@echo "... process_specifiers.i"
+	@echo "... process_specifiers.s"
 	@echo "... process_types.o"
 	@echo "... process_types.i"
 	@echo "... process_types.s"

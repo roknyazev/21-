@@ -6,7 +6,7 @@
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 22:47:04 by wrudy             #+#    #+#             */
-/*   Updated: 2020/07/13 23:11:58 by wrudy            ###   ########.fr       */
+/*   Updated: 2020/07/14 17:58:41 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,21 @@
 int process_int(placeholder *plh, va_list *arg)
 {
 	int		len;
-	char	*nmb_str;
+	char	*nbr_str;
 	char	*out;
 
 	if (plh->type == 'd' || plh -> type == 'i')
-		nmb_str = ft_itoa(va_arg(*arg, int));
+		nbr_str = ft_itoa(va_arg(*arg, int));
 	else if (plh->type == 'u')
-		nmb_str = ft_utoa(va_arg(*arg, unsigned int));
+		nbr_str = ft_utoa(va_arg(*arg, unsigned int));
 	else
-		nmb_str = ft_xtoa(va_arg(*arg, unsigned  int), plh->type);
-	out = nmb_str;
-	//out = process_flags(plh->flag, plh->width, plh->precision, nmb_str);
+		nbr_str = ft_xtoa(va_arg(*arg, unsigned  int), plh->type);
+	out = process_int_specifiers(plh->flag, plh->width, plh->precision, nbr_str);
 	len = ft_strlen(out);
 	write(1, out, len);
 
-	free(nmb_str);
-	//free(out);
+	free(nbr_str);
+	free(out);
 	return (len);
 }
 

@@ -6,7 +6,7 @@
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/12 20:49:21 by wrudy             #+#    #+#             */
-/*   Updated: 2020/07/13 21:17:16 by wrudy            ###   ########.fr       */
+/*   Updated: 2020/07/14 19:48:54 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,12 +78,12 @@ int	get_precision(char *f_str, placeholder *plh)
 	len = 1;
 	while (ft_isdigit(f_str[len]) || f_str[len] == '*')
 		len++;
-	if (len == 0)
+	if (len == 1)
 	{
-		plh->precision = NULL;
+		plh->precision = ft_calloc(1, 1);
 		return (len);
 	}
-	if (!(precision = malloc(sizeof(char) * (len + 1))))
+	if (!(precision = malloc(sizeof(char) * (len))))
 		return (0);
 	res = precision;
 	while (ft_isdigit(*(++f_str)) || *f_str == '*')

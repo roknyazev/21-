@@ -4,9 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/wrudy/Desktop/printf/ft_atoi.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_atoi.c.o"
+  "/Users/wrudy/Desktop/printf/ft_bzero.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_bzero.c.o"
+  "/Users/wrudy/Desktop/printf/ft_calloc.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_calloc.c.o"
   "/Users/wrudy/Desktop/printf/ft_isdigit.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_isdigit.c.o"
   "/Users/wrudy/Desktop/printf/ft_itoa.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_itoa.c.o"
   "/Users/wrudy/Desktop/printf/ft_printf.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_printf.c.o"
+  "/Users/wrudy/Desktop/printf/ft_strchr.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_strchr.c.o"
   "/Users/wrudy/Desktop/printf/ft_strdup.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_strdup.c.o"
   "/Users/wrudy/Desktop/printf/ft_strlen.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_strlen.c.o"
   "/Users/wrudy/Desktop/printf/ft_utoa.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_utoa.c.o"
@@ -15,6 +19,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/wrudy/Desktop/printf/get_specifiers.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/get_specifiers.c.o"
   "/Users/wrudy/Desktop/printf/main.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.o"
   "/Users/wrudy/Desktop/printf/parse.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/parse.c.o"
+  "/Users/wrudy/Desktop/printf/process_specifiers.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/process_specifiers.c.o"
   "/Users/wrudy/Desktop/printf/process_types.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/process_types.c.o"
   "/Users/wrudy/Desktop/printf/processing.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/processing.c.o"
   )

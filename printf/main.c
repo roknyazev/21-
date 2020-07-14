@@ -3,8 +3,9 @@
 
 int main()
 {
-    ft_printf("Hello, World!%d\n%x %X\n", -1356436, 5555, 6666666);
-	printf("Hello, World!%d\n%x %X", -1356436, 5555, 6666666);
+    //ft_printf("Hello, World!%d\n%x %X\n", -1356436, 5555, 6666666);
+	printf("%-30.15d\n", -12345);
+	printf("%-30.15d\n", 12345);
     return 0;
 }
 

@@ -6,7 +6,7 @@
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/12 19:06:13 by wrudy             #+#    #+#             */
-/*   Updated: 2020/07/13 17:35:06 by wrudy            ###   ########.fr       */
+/*   Updated: 2020/07/14 18:43:34 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,9 @@ char				*ft_strdup(const char *s);
 char				*ft_itoa(int n);
 char				*ft_utoa(unsigned int n);
 char				*ft_xtoa(unsigned long long n, char reg);
+int 				ft_atoi(const char *nptr);
+void				ft_bzero(void *s, size_t n);
+void				*ft_calloc(size_t nmemb, size_t size);
+char				*ft_strchr(const char *s, int c);
 
 #endif
