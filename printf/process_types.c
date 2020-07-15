@@ -6,7 +6,7 @@
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 22:47:04 by wrudy             #+#    #+#             */
-/*   Updated: 2020/07/14 17:58:41 by wrudy            ###   ########.fr       */
+/*   Updated: 2020/07/15 23:42:51 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,14 +45,9 @@ int process_char(placeholder *plh, va_list *arg)
 {
 	int				len;
 	unsigned char	c;
-	char			*out;
 
 	c = (unsigned char)va_arg(*arg, int);
-	//out = process_flags(plh->flag, plh->width, plh->precision, &c);
-	len = ft_strlen(out);
-	write(1, out, len);
-
-	free(out);
+	len = process_char_specifiers(plh->flag, plh->width, c);
 	return (len);
 }
 
@@ -63,7 +58,7 @@ int process_string(placeholder *plh, va_list *arg)
 	char	*out;
 
 	s = va_arg(*arg, char *);
-	//out = process_flags(plh->flag, plh->width, plh->precision, s);
+	//out = process_str_flags(plh->flag, plh->width, plh->precision, s);
 	len = ft_strlen(out);
 	write(1, out, len);
 

@@ -528,6 +528,33 @@ parse.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/parse.c.s
 .PHONY : parse.c.s
 
+process_char_specifiers.o: process_char_specifiers.c.o
+
+.PHONY : process_char_specifiers.o
+
+# target to build an object file
+process_char_specifiers.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_char_specifiers.c.o
+.PHONY : process_char_specifiers.c.o
+
+process_char_specifiers.i: process_char_specifiers.c.i
+
+.PHONY : process_char_specifiers.i
+
+# target to preprocess a source file
+process_char_specifiers.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_char_specifiers.c.i
+.PHONY : process_char_specifiers.c.i
+
+process_char_specifiers.s: process_char_specifiers.c.s
+
+.PHONY : process_char_specifiers.s
+
+# target to generate assembly for a file
+process_char_specifiers.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_char_specifiers.c.s
+.PHONY : process_char_specifiers.c.s
+
 process_int_specifier_support.o: process_int_specifier_support.c.o
 
 .PHONY : process_int_specifier_support.o
@@ -581,6 +608,33 @@ process_int_specifiers.s: process_int_specifiers.c.s
 process_int_specifiers.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_int_specifiers.c.s
 .PHONY : process_int_specifiers.c.s
+
+process_str_specifiers.o: process_str_specifiers.c.o
+
+.PHONY : process_str_specifiers.o
+
+# target to build an object file
+process_str_specifiers.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_str_specifiers.c.o
+.PHONY : process_str_specifiers.c.o
+
+process_str_specifiers.i: process_str_specifiers.c.i
+
+.PHONY : process_str_specifiers.i
+
+# target to preprocess a source file
+process_str_specifiers.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_str_specifiers.c.i
+.PHONY : process_str_specifiers.c.i
+
+process_str_specifiers.s: process_str_specifiers.c.s
+
+.PHONY : process_str_specifiers.s
+
+# target to generate assembly for a file
+process_str_specifiers.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_str_specifiers.c.s
+.PHONY : process_str_specifiers.c.s
 
 process_types.o: process_types.c.o
 
@@ -690,12 +744,18 @@ help:
 	@echo "... parse.o"
 	@echo "... parse.i"
 	@echo "... parse.s"
+	@echo "... process_char_specifiers.o"
+	@echo "... process_char_specifiers.i"
+	@echo "... process_char_specifiers.s"
 	@echo "... process_int_specifier_support.o"
 	@echo "... process_int_specifier_support.i"
 	@echo "... process_int_specifier_support.s"
 	@echo "... process_int_specifiers.o"
 	@echo "... process_int_specifiers.i"
 	@echo "... process_int_specifiers.s"
+	@echo "... process_str_specifiers.o"
+	@echo "... process_str_specifiers.i"
+	@echo "... process_str_specifiers.s"
 	@echo "... process_types.o"
 	@echo "... process_types.i"
 	@echo "... process_types.s"

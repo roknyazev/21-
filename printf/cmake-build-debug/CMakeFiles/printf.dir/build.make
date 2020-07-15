@@ -304,6 +304,32 @@ CMakeFiles/printf.dir/process_int_specifier_support.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/process_int_specifier_support.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wrudy/Desktop/printf/process_int_specifier_support.c -o CMakeFiles/printf.dir/process_int_specifier_support.c.s
 
+CMakeFiles/printf.dir/process_char_specifiers.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/process_char_specifiers.c.o: ../process_char_specifiers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/printf.dir/process_char_specifiers.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/process_char_specifiers.c.o   -c /Users/wrudy/Desktop/printf/process_char_specifiers.c
+
+CMakeFiles/printf.dir/process_char_specifiers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/process_char_specifiers.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/wrudy/Desktop/printf/process_char_specifiers.c > CMakeFiles/printf.dir/process_char_specifiers.c.i
+
+CMakeFiles/printf.dir/process_char_specifiers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/process_char_specifiers.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wrudy/Desktop/printf/process_char_specifiers.c -o CMakeFiles/printf.dir/process_char_specifiers.c.s
+
+CMakeFiles/printf.dir/process_str_specifiers.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/process_str_specifiers.c.o: ../process_str_specifiers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/printf.dir/process_str_specifiers.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/process_str_specifiers.c.o   -c /Users/wrudy/Desktop/printf/process_str_specifiers.c
+
+CMakeFiles/printf.dir/process_str_specifiers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/process_str_specifiers.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/wrudy/Desktop/printf/process_str_specifiers.c > CMakeFiles/printf.dir/process_str_specifiers.c.i
+
+CMakeFiles/printf.dir/process_str_specifiers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/process_str_specifiers.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wrudy/Desktop/printf/process_str_specifiers.c -o CMakeFiles/printf.dir/process_str_specifiers.c.s
+
 # Object files for target printf
 printf_OBJECTS = \
 "CMakeFiles/printf.dir/main.c.o" \
@@ -324,7 +350,9 @@ printf_OBJECTS = \
 "CMakeFiles/printf.dir/ft_calloc.c.o" \
 "CMakeFiles/printf.dir/ft_bzero.c.o" \
 "CMakeFiles/printf.dir/ft_strchr.c.o" \
-"CMakeFiles/printf.dir/process_int_specifier_support.c.o"
+"CMakeFiles/printf.dir/process_int_specifier_support.c.o" \
+"CMakeFiles/printf.dir/process_char_specifiers.c.o" \
+"CMakeFiles/printf.dir/process_str_specifiers.c.o"
 
 # External object files for target printf
 printf_EXTERNAL_OBJECTS =
@@ -348,9 +376,11 @@ printf: CMakeFiles/printf.dir/ft_calloc.c.o
 printf: CMakeFiles/printf.dir/ft_bzero.c.o
 printf: CMakeFiles/printf.dir/ft_strchr.c.o
 printf: CMakeFiles/printf.dir/process_int_specifier_support.c.o
+printf: CMakeFiles/printf.dir/process_char_specifiers.c.o
+printf: CMakeFiles/printf.dir/process_str_specifiers.c.o
 printf: CMakeFiles/printf.dir/build.make
 printf: CMakeFiles/printf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable printf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking C executable printf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/printf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

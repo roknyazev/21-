@@ -6,7 +6,7 @@
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/12 19:06:13 by wrudy             #+#    #+#             */
-/*   Updated: 2020/07/15 22:21:40 by wrudy            ###   ########.fr       */
+/*   Updated: 2020/07/15 23:40:07 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,9 @@ int					process_int(placeholder *plh, va_list *arg);
 char				*process_int_specifiers(char *s_fl, char *s_wid, char *s_pr, char *nbr);
 int					process_float(placeholder *plh, va_list *arg);
 int					process_char(placeholder *plh, va_list *arg);
+int					process_char_specifiers(char *s_fl, char *s_wid, unsigned char c);
 int					process_string(placeholder *plh, va_list *arg);
+char				*process_str_specifiers(char *s_fl, char *s_wid, char *s_pr, char *nbr);
 int					process_pointer(placeholder *plh, va_list *arg);
 /*
  * 					support functions

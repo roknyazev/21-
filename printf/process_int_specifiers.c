@@ -6,13 +6,13 @@
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 18:05:23 by wrudy             #+#    #+#             */
-/*   Updated: 2020/07/15 22:27:39 by wrudy            ###   ########.fr       */
+/*   Updated: 2020/07/15 22:29:15 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-char	*nbr_with_precision(int precision, char *nbr, int len)
+static char	*nbr_with_precision(int precision, char *nbr, int len)
 {
 	char	*result;
 
@@ -34,7 +34,7 @@ char	*nbr_with_precision(int precision, char *nbr, int len)
 	return (result);
 }
 
-char	*case_with_minus(int width, char *content)
+static char	*case_with_minus(int width, char *content)
 {
 	int		len;
 	char	*result;
@@ -57,7 +57,7 @@ char	*case_with_minus(int width, char *content)
 	return (result);
 }
 
-char	*case_without_minus(char *s_fl, int wid, const char *s_pr, char *cnt)
+static char	*case_without_minus(char *s_fl, int wid, const char *s_pr, char *cnt)
 {
 	int		len;
 	char	*result;

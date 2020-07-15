@@ -45,11 +45,17 @@ CMakeFiles/printf.dir/main.c.o: ../main.c
 CMakeFiles/printf.dir/parse.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/parse.c.o: ../parse.c
 
+CMakeFiles/printf.dir/process_char_specifiers.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/process_char_specifiers.c.o: ../process_char_specifiers.c
+
 CMakeFiles/printf.dir/process_int_specifier_support.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/process_int_specifier_support.c.o: ../process_int_specifier_support.c
 
-CMakeFiles/printf.dir/process_specifiers.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/process_specifiers.c.o: ../process_specifiers.c
+CMakeFiles/printf.dir/process_int_specifiers.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/process_int_specifiers.c.o: ../process_int_specifiers.c
+
+CMakeFiles/printf.dir/process_str_specifiers.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/process_str_specifiers.c.o: ../process_str_specifiers.c
 
 CMakeFiles/printf.dir/process_types.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/process_types.c.o: ../process_types.c
