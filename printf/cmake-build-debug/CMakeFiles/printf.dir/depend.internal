@@ -4,6 +4,12 @@
 CMakeFiles/printf.dir/ft_atoi.c.o
  /Users/wrudy/Desktop/printf/ft_atoi.c
  /Users/wrudy/Desktop/printf/ft_printf.h
+CMakeFiles/printf.dir/ft_bzero.c.o
+ /Users/wrudy/Desktop/printf/ft_bzero.c
+ /Users/wrudy/Desktop/printf/ft_printf.h
+CMakeFiles/printf.dir/ft_calloc.c.o
+ /Users/wrudy/Desktop/printf/ft_calloc.c
+ /Users/wrudy/Desktop/printf/ft_printf.h
 CMakeFiles/printf.dir/ft_isdigit.c.o
  /Users/wrudy/Desktop/printf/ft_isdigit.c
 CMakeFiles/printf.dir/ft_itoa.c.o
@@ -12,6 +18,9 @@ CMakeFiles/printf.dir/ft_itoa.c.o
 CMakeFiles/printf.dir/ft_printf.c.o
  /Users/wrudy/Desktop/printf/ft_printf.c
  /Users/wrudy/Desktop/printf/ft_printf.h
+CMakeFiles/printf.dir/ft_strchr.c.o
+ /Users/wrudy/Desktop/printf/ft_printf.h
+ /Users/wrudy/Desktop/printf/ft_strchr.c
 CMakeFiles/printf.dir/ft_strdup.c.o
  /Users/wrudy/Desktop/printf/ft_printf.h
  /Users/wrudy/Desktop/printf/ft_strdup.c

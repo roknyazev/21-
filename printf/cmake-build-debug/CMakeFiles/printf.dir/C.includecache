@@ -14,9 +14,7 @@ stdarg.h
 unistd.h
 -
 
-/Users/wrudy/Desktop/printf/main.c
-stdio.h
--
+/Users/wrudy/Desktop/printf/process_specifiers.c
 ft_printf.h
 /Users/wrudy/Desktop/printf/ft_printf.h
 

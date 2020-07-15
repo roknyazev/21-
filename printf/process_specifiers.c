@@ -6,92 +6,142 @@
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 18:05:23 by wrudy             #+#    #+#             */
-/*   Updated: 2020/07/14 21:31:51 by wrudy            ###   ########.fr       */
+/*   Updated: 2020/07/15 20:44:34 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int max(int width, int precision, int len)
+char	*nbr_with_precision(int precision, char *nbr, int len)
 {
-	if (width >= precision)
-	{
-		if (width >= len)
-			return (width);
-		else
-			return (len);
-	}
-	else
-	{
-		if (precision >= len)
-			return (precision);
-		else
-			return (len);
-	}
-}
+	int		i;
+	int		j;
+	char	*result;
 
-static char *case_without_precision(char *s_flag, char *s_width, char *nbr, int len)
-{
-	char *result;
-	char *tmp;
-	int filler_size;
-	int width;
-
-	if (s_width != NULL)
-		width = ft_atoi(s_width);
-	else
-		width = 0;
-	if (width >= len)
+	if (len >= precision)
+		return (ft_strdup(nbr));
+	i = 0;
+	if (nbr[0] == '-')
 	{
-		tmp = malloc(sizeof(char) * (width + 1));
-		filler_size = width - len;
+		result = malloc(sizeof(char) * (precision + 2));
+		result[0] = '-';
+		i = 1;
+		len = len - 1;
+		precision++;
+		nbr++;
 	}
 	else
+		result = malloc(sizeof(char) * (precision + 1));
+	j = 0;
+	while (i < precision)
 	{
-		tmp = malloc(sizeof(char) * (len + 1));
-		filler_size = 0;
+		if (i < (precision - len))
+			result[i] = '0';
+		else
+			result[i] = nbr[j++];
+		i++;
 	}
-	result = tmp;
-	if (ft_strchr(s_flag, '0') && !ft_strchr(s_flag, '-'))
-	{
-		while (filler_size--)
-			*(tmp++) = '0';
-		while (len--)
-			*(tmp++) = *(nbr++);
-	}
-	else if (ft_strchr(s_flag, '-'))
-	{
-		while (len--)
-			*(tmp++) = *(nbr++);
-		while (filler_size--)
-			*(tmp++) = ' ';
-	}
-	else
-	{
-		while (filler_size--)
-			*(tmp++) = ' ';
-		while (len--)
-			*(tmp++) = *(nbr++);
-	}
+	result[i] = '\0';
 	return (result);
 }
 
-char *case_width_precision(char *s_flag, char *s_precision, char *s_width, char *nbr, int len)
+char	*case_with_minus(int width, char *content)
 {
-	
+	int		len;
+	char	*result;
+	int		i;
+
+	i = 0;
+	len = ft_strlen(content);
+	if (len >= width)
+		return (ft_strdup(content));
+	result = malloc(sizeof(char) * (width + 1));
+	while (i < width)
+	{
+		if (i < len)
+			result[i] = content[i];
+		else
+			result[i] = ' ';
+		i++;
+	}
+	result[i] = '\0';
+	return (result);
 }
 
-char *process_int_specifiers(char *s_flag, char *s_width, char *s_precision, char *nbr)
+char	*case_without_minus(char *s_fl, int wid, const char *s_pr, char *cnt)
+{
+	int		len;
+	char	*result;
+	int		i;
+	int		j;
+
+	i = 0;
+	len = ft_strlen(cnt);
+	if (len >= wid)
+		return (ft_strdup(cnt));
+	result = malloc(sizeof(char) * (wid + 1));
+	j = 0;
+	if (s_fl != NULL && ft_strchr(s_fl, '0') && s_pr == NULL)
+	{
+		if (cnt[0] == '-')
+			result = nbr_with_precision(wid - 1, cnt, len);
+		else
+			result = nbr_with_precision(wid, cnt, len);
+		return (result);
+	}
+	while (i < wid)
+	{
+		if (i < (wid - len))
+			result[i] = ' ';
+		else
+			result[i] = cnt[j++];
+		i++;
+	}
+	result[i] = '\0';
+	return (result);
+}
+
+//void 	fill_str(int width, char c, int i, char **str, char *content)
+//{
+//	int j;
+//	int len;
+//
+//	j  = 0;
+//	len = ft_strlen(content);
+//	while (i < width)
+//	{
+//		if (i < (width - len))
+//			*str[i] = c;
+//		else
+//			*str[i] = content[j++];
+//		i++;
+//	}
+//}
+
+char	*process_int_specifiers(char *s_fl, char *s_wid, char *s_pr, char *nbr)
 {
 	char	*result;
+	char	*content;
 	int		len;
-
+	int		precision;
+	int		width;
 
 	len = ft_strlen(nbr);
-	if (s_precision == NULL)
-		result = case_without_precision(s_flag, s_width, nbr, len);
+	if (s_pr == NULL)
+		content = ft_strdup(nbr);
 	else
-		result = case_with_precision(s_flag, s_precision, s_width, nbr, len);
-	return result;
+	{
+		precision = ft_atoi(s_pr);
+		content = nbr_with_precision(precision, nbr, len);
+	}
+	if (s_wid == NULL)
+		width = 0;
+	else
+		width = ft_atoi(s_wid);
+	if (s_fl != NULL && ft_strchr(s_fl, '-'))
+		result = case_with_minus(width, content);
+	else
+		result = case_without_minus(s_fl, width, s_pr, content);
+	free(content);
+	return (result);
 }
-

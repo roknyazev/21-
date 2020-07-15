@@ -4,6 +4,12 @@
 CMakeFiles/printf.dir/ft_atoi.c.o: ../ft_atoi.c
 CMakeFiles/printf.dir/ft_atoi.c.o: ../ft_printf.h
 
+CMakeFiles/printf.dir/ft_bzero.c.o: ../ft_bzero.c
+CMakeFiles/printf.dir/ft_bzero.c.o: ../ft_printf.h
+
+CMakeFiles/printf.dir/ft_calloc.c.o: ../ft_calloc.c
+CMakeFiles/printf.dir/ft_calloc.c.o: ../ft_printf.h
+
 CMakeFiles/printf.dir/ft_isdigit.c.o: ../ft_isdigit.c
 
 CMakeFiles/printf.dir/ft_itoa.c.o: ../ft_itoa.c
@@ -11,6 +17,9 @@ CMakeFiles/printf.dir/ft_itoa.c.o: ../ft_printf.h
 
 CMakeFiles/printf.dir/ft_printf.c.o: ../ft_printf.c
 CMakeFiles/printf.dir/ft_printf.c.o: ../ft_printf.h
+
+CMakeFiles/printf.dir/ft_strchr.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/ft_strchr.c.o: ../ft_strchr.c
 
 CMakeFiles/printf.dir/ft_strdup.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/ft_strdup.c.o: ../ft_strdup.c

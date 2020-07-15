@@ -51,6 +51,7 @@ int					get_type(const char *format_string, placeholder *plh);
  */
 int					process(format_list *format, va_list *arg);
 int					process_int(placeholder *plh, va_list *arg);
+char				*process_int_specifiers(char *s_fl, char *s_wid, char *s_pr, char *nbr);
 int					process_float(placeholder *plh, va_list *arg);
 int					process_char(placeholder *plh, va_list *arg);
 int					process_string(placeholder *plh, va_list *arg);
