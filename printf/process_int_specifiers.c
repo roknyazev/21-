@@ -6,7 +6,7 @@
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 18:05:23 by wrudy             #+#    #+#             */
-/*   Updated: 2020/07/15 20:44:34 by wrudy            ###   ########.fr       */
+/*   Updated: 2020/07/15 22:27:39 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,34 +14,23 @@
 
 char	*nbr_with_precision(int precision, char *nbr, int len)
 {
-	int		i;
-	int		j;
 	char	*result;
 
 	if (len >= precision)
 		return (ft_strdup(nbr));
-	i = 0;
 	if (nbr[0] == '-')
 	{
 		result = malloc(sizeof(char) * (precision + 2));
 		result[0] = '-';
-		i = 1;
-		len = len - 1;
 		precision++;
 		nbr++;
+		fill_str_with_precision_1(precision, '0', &result, nbr);
 	}
 	else
-		result = malloc(sizeof(char) * (precision + 1));
-	j = 0;
-	while (i < precision)
 	{
-		if (i < (precision - len))
-			result[i] = '0';
-		else
-			result[i] = nbr[j++];
-		i++;
+		result = malloc(sizeof(char) * (precision + 1));
+		fill_str_with_precision_0(precision, '0', &result, nbr);
 	}
-	result[i] = '\0';
 	return (result);
 }
 
@@ -72,15 +61,11 @@ char	*case_without_minus(char *s_fl, int wid, const char *s_pr, char *cnt)
 {
 	int		len;
 	char	*result;
-	int		i;
-	int		j;
 
-	i = 0;
 	len = ft_strlen(cnt);
 	if (len >= wid)
 		return (ft_strdup(cnt));
 	result = malloc(sizeof(char) * (wid + 1));
-	j = 0;
 	if (s_fl != NULL && ft_strchr(s_fl, '0') && s_pr == NULL)
 	{
 		if (cnt[0] == '-')
@@ -89,34 +74,9 @@ char	*case_without_minus(char *s_fl, int wid, const char *s_pr, char *cnt)
 			result = nbr_with_precision(wid, cnt, len);
 		return (result);
 	}
-	while (i < wid)
-	{
-		if (i < (wid - len))
-			result[i] = ' ';
-		else
-			result[i] = cnt[j++];
-		i++;
-	}
-	result[i] = '\0';
+	fill_str_without_minus(wid, ' ', &result, cnt);
 	return (result);
 }
-
-//void 	fill_str(int width, char c, int i, char **str, char *content)
-//{
-//	int j;
-//	int len;
-//
-//	j  = 0;
-//	len = ft_strlen(content);
-//	while (i < width)
-//	{
-//		if (i < (width - len))
-//			*str[i] = c;
-//		else
-//			*str[i] = content[j++];
-//		i++;
-//	}
-//}
 
 char	*process_int_specifiers(char *s_fl, char *s_wid, char *s_pr, char *nbr)
 {

@@ -45,6 +45,9 @@ CMakeFiles/printf.dir/main.c.o: ../main.c
 CMakeFiles/printf.dir/parse.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/parse.c.o: ../parse.c
 
+CMakeFiles/printf.dir/process_int_specifier_support.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/process_int_specifier_support.c.o: ../process_int_specifier_support.c
+
 CMakeFiles/printf.dir/process_specifiers.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/process_specifiers.c.o: ../process_specifiers.c
 

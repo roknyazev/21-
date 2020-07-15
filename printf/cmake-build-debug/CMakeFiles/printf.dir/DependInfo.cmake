@@ -19,7 +19,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/wrudy/Desktop/printf/get_specifiers.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/get_specifiers.c.o"
   "/Users/wrudy/Desktop/printf/main.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.o"
   "/Users/wrudy/Desktop/printf/parse.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/parse.c.o"
-  "/Users/wrudy/Desktop/printf/process_specifiers.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/process_specifiers.c.o"
+  "/Users/wrudy/Desktop/printf/process_int_specifier_support.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/process_int_specifier_support.c.o"
+  "/Users/wrudy/Desktop/printf/process_int_specifiers.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/process_int_specifiers.c.o"
   "/Users/wrudy/Desktop/printf/process_types.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/process_types.c.o"
   "/Users/wrudy/Desktop/printf/processing.c" "/Users/wrudy/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/processing.c.o"
   )
