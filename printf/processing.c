@@ -20,8 +20,6 @@ static int	print_arg(placeholder *plh, va_list *arg)
 	if (plh->type == 'd' || plh->type == 'i' || plh->type == 'u' ||
 	plh->type == 'x' || plh->type == 'X')
 		process_int(plh, arg);
-	else if (plh->type == 'f' || plh->type == 'e' || plh->type == 'g')
-		process_float(plh, arg);
 	else if (plh->type == 'c')
 		process_char(plh, arg);
 	else if (plh->type == 's')

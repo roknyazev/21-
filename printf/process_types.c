@@ -6,7 +6,7 @@
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 22:47:04 by wrudy             #+#    #+#             */
-/*   Updated: 2020/07/15 23:42:51 by wrudy            ###   ########.fr       */
+/*   Updated: 2020/07/16 18:53:55 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,6 @@ int process_int(placeholder *plh, va_list *arg)
 	return (len);
 }
 
-int process_float(placeholder *plh, va_list *arg)
-{
-	int i;
-
-	i = 0;
-	return (i);
-}
-
 int process_char(placeholder *plh, va_list *arg)
 {
 	int				len;
@@ -55,30 +47,19 @@ int process_string(placeholder *plh, va_list *arg)
 {
 	int		len;
 	char	*s;
-	char	*out;
 
 	s = va_arg(*arg, char *);
-	//out = process_str_flags(plh->flag, plh->width, plh->precision, s);
-	len = ft_strlen(out);
-	write(1, out, len);
-
-	free(s);
-	free(out);
+	len = process_str_specifiers(plh->flag, plh->width, plh->precision, s);
+	//free(s);
 	return (len);
 }
 
 int process_pointer(placeholder *plh, va_list *arg)
 {
-	int				len;
-	unsigned int	p;
-	char			*out;
+	int					len;
+	unsigned long long	p;
 
-	p = va_arg(*arg, unsigned int);
-	out = ft_xtoa(p, 'x');
-	//out = process_flags(plh->flag, plh->width, plh->precision, p);
-	len = ft_strlen(out);
-	write(1, out, len);
-
-	//free(out);
+	p = va_arg(*arg, unsigned long long);
+	len = process_ptr_specifiers(plh->flag, plh->width, p);
 	return (len);
 }

@@ -18,6 +18,9 @@ CMakeFiles/printf.dir/ft_itoa.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/ft_printf.c.o: ../ft_printf.c
 CMakeFiles/printf.dir/ft_printf.c.o: ../ft_printf.h
 
+CMakeFiles/printf.dir/ft_ptoa.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/ft_ptoa.c.o: ../ft_ptoa.c
+
 CMakeFiles/printf.dir/ft_strchr.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/ft_strchr.c.o: ../ft_strchr.c
 
@@ -53,6 +56,9 @@ CMakeFiles/printf.dir/process_int_specifier_support.c.o: ../process_int_specifie
 
 CMakeFiles/printf.dir/process_int_specifiers.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/process_int_specifiers.c.o: ../process_int_specifiers.c
+
+CMakeFiles/printf.dir/process_pointer_specifiers.c.o: ../ft_printf.h
+CMakeFiles/printf.dir/process_pointer_specifiers.c.o: ../process_pointer_specifiers.c
 
 CMakeFiles/printf.dir/process_str_specifiers.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/process_str_specifiers.c.o: ../process_str_specifiers.c

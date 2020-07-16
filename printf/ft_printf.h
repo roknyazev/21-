@@ -6,7 +6,7 @@
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/12 19:06:13 by wrudy             #+#    #+#             */
-/*   Updated: 2020/07/15 23:40:07 by wrudy            ###   ########.fr       */
+/*   Updated: 2020/07/16 17:00:40 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,12 +52,12 @@ int					get_type(const char *format_string, placeholder *plh);
 int					process(format_list *format, va_list *arg);
 int					process_int(placeholder *plh, va_list *arg);
 char				*process_int_specifiers(char *s_fl, char *s_wid, char *s_pr, char *nbr);
-int					process_float(placeholder *plh, va_list *arg);
 int					process_char(placeholder *plh, va_list *arg);
 int					process_char_specifiers(char *s_fl, char *s_wid, unsigned char c);
 int					process_string(placeholder *plh, va_list *arg);
-char				*process_str_specifiers(char *s_fl, char *s_wid, char *s_pr, char *nbr);
+int					process_str_specifiers(char *s_fl, char *s_wid, char *s_pr, char *str);
 int					process_pointer(placeholder *plh, va_list *arg);
+int					process_ptr_specifiers(char *s_fl, char *s_wid, unsigned long long ptr);
 /*
  * 					support functions
  */
@@ -68,6 +68,7 @@ char				*ft_strdup(const char *s);
 char				*ft_itoa(int n);
 char				*ft_utoa(unsigned int n);
 char				*ft_xtoa(unsigned long long n, char reg);
+char				*ft_ptoa(unsigned long long n);
 int 				ft_atoi(const char *nptr);
 void				ft_bzero(void *s, size_t n);
 void				*ft_calloc(size_t nmemb, size_t size);

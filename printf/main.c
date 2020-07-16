@@ -3,25 +3,32 @@
 
 int main()
 {
-    //ft_printf("%015d\n", -1356436);
-	//printf("%015d\n\n", -1356436);
+    ft_printf("%015d\n", -1356436);
+	printf("%015d\n\n", -1356436);
 
-	//ft_printf("%*.*X\n", 20, 10, -83649);
-	//printf("%*.*X\n", 20, 10, -83649);
+	ft_printf("%*.*X\n", 20, 10, -83649);
+	printf("%*.*X\n\n", 20, 10, -83649);
 
-	//ft_printf("%-30.15d\n", 12345);
-	//printf("%-30.15d\n", 12345);
+	ft_printf("%-30.15d\n", 12345);
+	printf("%-30.15d\n\n", 12345);
 
-	//ft_printf("%-5%\n");
-	//printf("%-5%\n");
+	ft_printf("%-5%\n");
+	printf("%-5%\n\n");
 
-	//ft_printf("%x\n", 4294967295U);
-	//printf("%x\n", 4294967295U);
+	ft_printf("%x\n", 4294967295U);
+	printf("%x\n\n", 4294967295U);
 
-	//ft_printf("%-10c\n", 'a');
-	//printf("%-10c\n", 'a');
+	ft_printf("%-10c\n", 'a');
+	printf("%-10c\n\n", 'a');
 
-	printf("%-2.1s", "12345");
+	ft_printf("%15s\n", "12345\0 67890");
+	printf("%15s\n\n", "12345\0 67890");
+
+	size_t *p;
+
+	p = malloc(5);
+	ft_printf("%-100p\n", p);
+	printf("%-100p\n\n", p);
     return 0;
 }
 

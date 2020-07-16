@@ -1,73 +1,74 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   process_str_flags.c                                :+:      :+:    :+:   */
+/*   process_pointer_specifiers.c                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/15 23:44:28 by wrudy             #+#    #+#             */
-/*   Updated: 2020/07/16 16:34:46 by wrudy            ###   ########.fr       */
+/*   Created: 2020/07/16 16:43:56 by wrudy             #+#    #+#             */
+/*   Updated: 2020/07/16 19:02:08 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void case_with_minus(int width, int max_str_len, char *str)
+static void case_with_minus(int width, int str_len, char *ptr_str)
 {
 	int		i;
 	char	c;
 
-	i = 0;
+	write(1, "0x", 2);
+	i = 2;
 	c = ' ';
 	while (i < width)
 	{
-		if (i < max_str_len)
-			write(1, &str[i], 1);
+		if (i < str_len + 2)
+			write(1, &ptr_str[i - 2], 1);
 		else
 			write(1, &c, 1);
 		i++;
 	}
 }
 
-static void case_without_minus(int width, int max_str_len, char *str)
+static void case_without_minus(int width, int str_len, char *ptr_str)
 {
 	int		i;
 	char 	c;
 
 	i = 0;
 	c = ' ';
+	while (i < (width - str_len - 2))
+	{
+		write(1, &c, 1);
+		i++;
+	}
+	write(1, "0x", 2);
 	while (i < width)
 	{
-		if (i < (width - max_str_len))
-			write(1, &c, 1);
-		else
-			write(1, &str[i - width + max_str_len], 1);
+		write(1, &ptr_str[i - width + str_len], 1);
 		i++;
 	}
 }
 
-int	process_str_specifiers(char *s_fl, char *s_wid, char *s_pr, char *str)
+int	process_ptr_specifiers(char *s_fl, char *s_wid, unsigned long long ptr)
 {
 	int		width;
-	int		max_str_len;
 	int 	str_len;
+	char	*pointer_string;
 
-	str_len = ft_strlen(str);
-	if (s_pr != NULL)
-		max_str_len = ft_atoi(s_pr);
+	pointer_string = ft_ptoa(ptr);
+	str_len = ft_strlen(pointer_string);
+	if (s_wid == NULL)
+		width =	str_len;
 	else
-		max_str_len = str_len;
-	if (s_wid != NULL)
 	{
 		width = ft_atoi(s_wid);
-		if (width < max_str_len)
-			width = max_str_len;
+		if (width < str_len)
+			width = str_len;
 	}
-	else
-		width = max_str_len;
 	if (s_fl != NULL && ft_strchr(s_fl, '-'))
-		case_with_minus(width, max_str_len, str);
+		case_with_minus(width, str_len, pointer_string);
 	else
-		case_without_minus(width, max_str_len, str);
+		case_without_minus(width, str_len, pointer_string);
 	return (width);
 }

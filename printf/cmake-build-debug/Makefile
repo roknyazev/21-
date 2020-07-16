@@ -285,6 +285,33 @@ ft_printf.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_printf.c.s
 .PHONY : ft_printf.c.s
 
+ft_ptoa.o: ft_ptoa.c.o
+
+.PHONY : ft_ptoa.o
+
+# target to build an object file
+ft_ptoa.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_ptoa.c.o
+.PHONY : ft_ptoa.c.o
+
+ft_ptoa.i: ft_ptoa.c.i
+
+.PHONY : ft_ptoa.i
+
+# target to preprocess a source file
+ft_ptoa.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_ptoa.c.i
+.PHONY : ft_ptoa.c.i
+
+ft_ptoa.s: ft_ptoa.c.s
+
+.PHONY : ft_ptoa.s
+
+# target to generate assembly for a file
+ft_ptoa.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_ptoa.c.s
+.PHONY : ft_ptoa.c.s
+
 ft_strchr.o: ft_strchr.c.o
 
 .PHONY : ft_strchr.o
@@ -609,6 +636,33 @@ process_int_specifiers.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_int_specifiers.c.s
 .PHONY : process_int_specifiers.c.s
 
+process_pointer_specifiers.o: process_pointer_specifiers.c.o
+
+.PHONY : process_pointer_specifiers.o
+
+# target to build an object file
+process_pointer_specifiers.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_pointer_specifiers.c.o
+.PHONY : process_pointer_specifiers.c.o
+
+process_pointer_specifiers.i: process_pointer_specifiers.c.i
+
+.PHONY : process_pointer_specifiers.i
+
+# target to preprocess a source file
+process_pointer_specifiers.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_pointer_specifiers.c.i
+.PHONY : process_pointer_specifiers.c.i
+
+process_pointer_specifiers.s: process_pointer_specifiers.c.s
+
+.PHONY : process_pointer_specifiers.s
+
+# target to generate assembly for a file
+process_pointer_specifiers.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/process_pointer_specifiers.c.s
+.PHONY : process_pointer_specifiers.c.s
+
 process_str_specifiers.o: process_str_specifiers.c.o
 
 .PHONY : process_str_specifiers.o
@@ -717,6 +771,9 @@ help:
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
+	@echo "... ft_ptoa.o"
+	@echo "... ft_ptoa.i"
+	@echo "... ft_ptoa.s"
 	@echo "... ft_strchr.o"
 	@echo "... ft_strchr.i"
 	@echo "... ft_strchr.s"
@@ -753,6 +810,9 @@ help:
 	@echo "... process_int_specifiers.o"
 	@echo "... process_int_specifiers.i"
 	@echo "... process_int_specifiers.s"
+	@echo "... process_pointer_specifiers.o"
+	@echo "... process_pointer_specifiers.i"
+	@echo "... process_pointer_specifiers.s"
 	@echo "... process_str_specifiers.o"
 	@echo "... process_str_specifiers.i"
 	@echo "... process_str_specifiers.s"

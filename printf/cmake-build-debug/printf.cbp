@@ -99,6 +99,9 @@
 		<Unit filename="/Users/wrudy/Desktop/printf/ft_printf.h">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/printf/ft_ptoa.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/printf/ft_strchr.c">
 			<Option target="printf"/>
 		</Unit>
@@ -133,6 +136,9 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/printf/process_int_specifiers.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/printf/process_pointer_specifiers.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/printf/process_str_specifiers.c">
