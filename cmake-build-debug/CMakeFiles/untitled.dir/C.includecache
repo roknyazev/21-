@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wrudy/Desktop/untitled/ft_printf.h
+stdlib.h
+-
+stdarg.h
+-
+unistd.h
+-
+
+/Users/wrudy/Desktop/untitled/main.c
+stdio.h
+-
+ft_printf.h
+/Users/wrudy/Desktop/untitled/ft_printf.h
+limits.h
+-
+
