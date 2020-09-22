@@ -4,8 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/wrudy/Desktop/minirt 2/canvas/canvas.c" "/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles/minirt.dir/canvas/canvas.c.o"
+  "/Users/wrudy/Desktop/minirt 2/canvas/color.c" "/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles/minirt.dir/canvas/color.c.o"
   "/Users/wrudy/Desktop/minirt 2/linalg/vecalg.c" "/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles/minirt.dir/linalg/vecalg.c.o"
   "/Users/wrudy/Desktop/minirt 2/main.c" "/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles/minirt.dir/main.c.o"
+  "/Users/wrudy/Desktop/minirt 2/render.c" "/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles/minirt.dir/render.c.o"
+  "/Users/wrudy/Desktop/minirt 2/scene/camera.c" "/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles/minirt.dir/scene/camera.c.o"
+  "/Users/wrudy/Desktop/minirt 2/scene/light.c" "/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles/minirt.dir/scene/light.c.o"
+  "/Users/wrudy/Desktop/minirt 2/scene/scene.c" "/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles/minirt.dir/scene/scene.c.o"
+  "/Users/wrudy/Desktop/minirt 2/scene/scene_objects/sphere.c" "/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

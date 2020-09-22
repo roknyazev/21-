@@ -3,35 +3,33 @@
 
 int main()
 {
+	t_scene		*scene;
+	t_canvas	*canvas;
+	void *mlx;
+	void *win;
+	int	i;
+	int	j;
+	int c;
 
+	scene = new_scene("scene.rt");
+	canvas = render(scene);
 
-
-	//void *mlx;
-	//void *win;
-	//int	i;
-	//int	j;
-	//mlx = mlx_init();
-	//win = mlx_new_window(mlx, 1920 ,1080, "rt");
-	//i = 0;
-	//while (i < 1920)
-	//{
-	//	j = 0;
-	//	while (j < 1080)
-	//	{
-	//		mlx_pixel_put(mlx, win, i, j, 0X00FFFF);
-	//		j++;
-	//	}
-	//	i++;
-	//}
-	//mlx_loop(mlx);
-
-
-	t_vector *color;
-
-	color = vector(5.5, 3, 7);
-	color->scalar_product(color, -5);
-	printf("%f\n%f\n%f\n", color->x, color->y, color->z);
-	free(color);
-
+	mlx = mlx_init();
+	win = mlx_new_window(mlx, scene->resolution_x ,scene->resolution_y, "rt");
+	i = 0;
+	while (i < scene->resolution_x)
+	{
+		j = 0;
+		while (j < scene->resolution_y)
+		{
+			c = canvas->get_pixel(canvas, i, j)->in_hex(canvas->get_pixel(canvas, i, j));
+			mlx_pixel_put(mlx, win, i, j, c);
+			j++;
+		}
+		i++;
+	}
+	canvas->destroy(canvas);
+	scene->destroy(scene);
+	mlx_loop(mlx);
 	return 0;
 }

@@ -143,6 +143,60 @@ minirt/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/build
 .PHONY : minirt/fast
 
+canvas/canvas.o: canvas/canvas.c.o
+
+.PHONY : canvas/canvas.o
+
+# target to build an object file
+canvas/canvas.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/canvas/canvas.c.o
+.PHONY : canvas/canvas.c.o
+
+canvas/canvas.i: canvas/canvas.c.i
+
+.PHONY : canvas/canvas.i
+
+# target to preprocess a source file
+canvas/canvas.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/canvas/canvas.c.i
+.PHONY : canvas/canvas.c.i
+
+canvas/canvas.s: canvas/canvas.c.s
+
+.PHONY : canvas/canvas.s
+
+# target to generate assembly for a file
+canvas/canvas.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/canvas/canvas.c.s
+.PHONY : canvas/canvas.c.s
+
+canvas/color.o: canvas/color.c.o
+
+.PHONY : canvas/color.o
+
+# target to build an object file
+canvas/color.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/canvas/color.c.o
+.PHONY : canvas/color.c.o
+
+canvas/color.i: canvas/color.c.i
+
+.PHONY : canvas/color.i
+
+# target to preprocess a source file
+canvas/color.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/canvas/color.c.i
+.PHONY : canvas/color.c.i
+
+canvas/color.s: canvas/color.c.s
+
+.PHONY : canvas/color.s
+
+# target to generate assembly for a file
+canvas/color.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/canvas/color.c.s
+.PHONY : canvas/color.c.s
+
 linalg/vecalg.o: linalg/vecalg.c.o
 
 .PHONY : linalg/vecalg.o
@@ -197,6 +251,141 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/main.c.s
 .PHONY : main.c.s
 
+render.o: render.c.o
+
+.PHONY : render.o
+
+# target to build an object file
+render.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/render.c.o
+.PHONY : render.c.o
+
+render.i: render.c.i
+
+.PHONY : render.i
+
+# target to preprocess a source file
+render.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/render.c.i
+.PHONY : render.c.i
+
+render.s: render.c.s
+
+.PHONY : render.s
+
+# target to generate assembly for a file
+render.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/render.c.s
+.PHONY : render.c.s
+
+scene/camera.o: scene/camera.c.o
+
+.PHONY : scene/camera.o
+
+# target to build an object file
+scene/camera.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/camera.c.o
+.PHONY : scene/camera.c.o
+
+scene/camera.i: scene/camera.c.i
+
+.PHONY : scene/camera.i
+
+# target to preprocess a source file
+scene/camera.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/camera.c.i
+.PHONY : scene/camera.c.i
+
+scene/camera.s: scene/camera.c.s
+
+.PHONY : scene/camera.s
+
+# target to generate assembly for a file
+scene/camera.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/camera.c.s
+.PHONY : scene/camera.c.s
+
+scene/light.o: scene/light.c.o
+
+.PHONY : scene/light.o
+
+# target to build an object file
+scene/light.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/light.c.o
+.PHONY : scene/light.c.o
+
+scene/light.i: scene/light.c.i
+
+.PHONY : scene/light.i
+
+# target to preprocess a source file
+scene/light.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/light.c.i
+.PHONY : scene/light.c.i
+
+scene/light.s: scene/light.c.s
+
+.PHONY : scene/light.s
+
+# target to generate assembly for a file
+scene/light.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/light.c.s
+.PHONY : scene/light.c.s
+
+scene/scene.o: scene/scene.c.o
+
+.PHONY : scene/scene.o
+
+# target to build an object file
+scene/scene.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene.c.o
+.PHONY : scene/scene.c.o
+
+scene/scene.i: scene/scene.c.i
+
+.PHONY : scene/scene.i
+
+# target to preprocess a source file
+scene/scene.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene.c.i
+.PHONY : scene/scene.c.i
+
+scene/scene.s: scene/scene.c.s
+
+.PHONY : scene/scene.s
+
+# target to generate assembly for a file
+scene/scene.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene.c.s
+.PHONY : scene/scene.c.s
+
+scene/scene_objects/sphere.o: scene/scene_objects/sphere.c.o
+
+.PHONY : scene/scene_objects/sphere.o
+
+# target to build an object file
+scene/scene_objects/sphere.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.o
+.PHONY : scene/scene_objects/sphere.c.o
+
+scene/scene_objects/sphere.i: scene/scene_objects/sphere.c.i
+
+.PHONY : scene/scene_objects/sphere.i
+
+# target to preprocess a source file
+scene/scene_objects/sphere.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.i
+.PHONY : scene/scene_objects/sphere.c.i
+
+scene/scene_objects/sphere.s: scene/scene_objects/sphere.c.s
+
+.PHONY : scene/scene_objects/sphere.s
+
+# target to generate assembly for a file
+scene/scene_objects/sphere.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.s
+.PHONY : scene/scene_objects/sphere.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -206,12 +395,33 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... minirt"
+	@echo "... canvas/canvas.o"
+	@echo "... canvas/canvas.i"
+	@echo "... canvas/canvas.s"
+	@echo "... canvas/color.o"
+	@echo "... canvas/color.i"
+	@echo "... canvas/color.s"
 	@echo "... linalg/vecalg.o"
 	@echo "... linalg/vecalg.i"
 	@echo "... linalg/vecalg.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... render.o"
+	@echo "... render.i"
+	@echo "... render.s"
+	@echo "... scene/camera.o"
+	@echo "... scene/camera.i"
+	@echo "... scene/camera.s"
+	@echo "... scene/light.o"
+	@echo "... scene/light.i"
+	@echo "... scene/light.s"
+	@echo "... scene/scene.o"
+	@echo "... scene/scene.i"
+	@echo "... scene/scene.s"
+	@echo "... scene/scene_objects/sphere.o"
+	@echo "... scene/scene_objects/sphere.i"
+	@echo "... scene/scene_objects/sphere.s"
 .PHONY : help
 
 

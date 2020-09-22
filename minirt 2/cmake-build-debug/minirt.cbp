@@ -82,7 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/wrudy/Desktop/minirt 2/canvas/canvas.c">
+			<Option target="minirt"/>
+		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/minirt 2/canvas/canvas.h">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt 2/canvas/color.c">
 			<Option target="minirt"/>
 		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/minirt 2/linalg/linalg.h">
@@ -95,6 +101,27 @@
 			<Option target="minirt"/>
 		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/minirt 2/minirt.h">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt 2/render.c">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt 2/scene/camera.c">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt 2/scene/light.c">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt 2/scene/scene.c">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt 2/scene/scene.h">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt 2/scene/scene_objects/objects.h">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt 2/scene/scene_objects/sphere.c">
 			<Option target="minirt"/>
 		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/minirt 2/CMakeLists.txt">

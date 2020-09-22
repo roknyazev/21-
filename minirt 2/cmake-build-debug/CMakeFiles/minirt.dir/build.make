@@ -103,20 +103,125 @@ CMakeFiles/minirt.dir/linalg/vecalg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/linalg/vecalg.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/wrudy/Desktop/minirt 2/linalg/vecalg.c" -o CMakeFiles/minirt.dir/linalg/vecalg.c.s
 
+CMakeFiles/minirt.dir/canvas/color.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/canvas/color.c.o: ../canvas/color.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/minirt.dir/canvas/color.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/canvas/color.c.o   -c "/Users/wrudy/Desktop/minirt 2/canvas/color.c"
+
+CMakeFiles/minirt.dir/canvas/color.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/canvas/color.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/wrudy/Desktop/minirt 2/canvas/color.c" > CMakeFiles/minirt.dir/canvas/color.c.i
+
+CMakeFiles/minirt.dir/canvas/color.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/canvas/color.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/wrudy/Desktop/minirt 2/canvas/color.c" -o CMakeFiles/minirt.dir/canvas/color.c.s
+
+CMakeFiles/minirt.dir/canvas/canvas.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/canvas/canvas.c.o: ../canvas/canvas.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/minirt.dir/canvas/canvas.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/canvas/canvas.c.o   -c "/Users/wrudy/Desktop/minirt 2/canvas/canvas.c"
+
+CMakeFiles/minirt.dir/canvas/canvas.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/canvas/canvas.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/wrudy/Desktop/minirt 2/canvas/canvas.c" > CMakeFiles/minirt.dir/canvas/canvas.c.i
+
+CMakeFiles/minirt.dir/canvas/canvas.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/canvas/canvas.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/wrudy/Desktop/minirt 2/canvas/canvas.c" -o CMakeFiles/minirt.dir/canvas/canvas.c.s
+
+CMakeFiles/minirt.dir/scene/light.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/scene/light.c.o: ../scene/light.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/minirt.dir/scene/light.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/scene/light.c.o   -c "/Users/wrudy/Desktop/minirt 2/scene/light.c"
+
+CMakeFiles/minirt.dir/scene/light.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/scene/light.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/wrudy/Desktop/minirt 2/scene/light.c" > CMakeFiles/minirt.dir/scene/light.c.i
+
+CMakeFiles/minirt.dir/scene/light.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/scene/light.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/wrudy/Desktop/minirt 2/scene/light.c" -o CMakeFiles/minirt.dir/scene/light.c.s
+
+CMakeFiles/minirt.dir/scene/camera.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/scene/camera.c.o: ../scene/camera.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/minirt.dir/scene/camera.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/scene/camera.c.o   -c "/Users/wrudy/Desktop/minirt 2/scene/camera.c"
+
+CMakeFiles/minirt.dir/scene/camera.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/scene/camera.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/wrudy/Desktop/minirt 2/scene/camera.c" > CMakeFiles/minirt.dir/scene/camera.c.i
+
+CMakeFiles/minirt.dir/scene/camera.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/scene/camera.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/wrudy/Desktop/minirt 2/scene/camera.c" -o CMakeFiles/minirt.dir/scene/camera.c.s
+
+CMakeFiles/minirt.dir/scene/scene.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/scene/scene.c.o: ../scene/scene.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/minirt.dir/scene/scene.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/scene/scene.c.o   -c "/Users/wrudy/Desktop/minirt 2/scene/scene.c"
+
+CMakeFiles/minirt.dir/scene/scene.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/scene/scene.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/wrudy/Desktop/minirt 2/scene/scene.c" > CMakeFiles/minirt.dir/scene/scene.c.i
+
+CMakeFiles/minirt.dir/scene/scene.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/scene/scene.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/wrudy/Desktop/minirt 2/scene/scene.c" -o CMakeFiles/minirt.dir/scene/scene.c.s
+
+CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.o: ../scene/scene_objects/sphere.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.o   -c "/Users/wrudy/Desktop/minirt 2/scene/scene_objects/sphere.c"
+
+CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/wrudy/Desktop/minirt 2/scene/scene_objects/sphere.c" > CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.i
+
+CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/wrudy/Desktop/minirt 2/scene/scene_objects/sphere.c" -o CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.s
+
+CMakeFiles/minirt.dir/render.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/render.c.o: ../render.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/minirt.dir/render.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/render.c.o   -c "/Users/wrudy/Desktop/minirt 2/render.c"
+
+CMakeFiles/minirt.dir/render.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/render.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/wrudy/Desktop/minirt 2/render.c" > CMakeFiles/minirt.dir/render.c.i
+
+CMakeFiles/minirt.dir/render.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/render.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/wrudy/Desktop/minirt 2/render.c" -o CMakeFiles/minirt.dir/render.c.s
+
 # Object files for target minirt
 minirt_OBJECTS = \
 "CMakeFiles/minirt.dir/main.c.o" \
-"CMakeFiles/minirt.dir/linalg/vecalg.c.o"
+"CMakeFiles/minirt.dir/linalg/vecalg.c.o" \
+"CMakeFiles/minirt.dir/canvas/color.c.o" \
+"CMakeFiles/minirt.dir/canvas/canvas.c.o" \
+"CMakeFiles/minirt.dir/scene/light.c.o" \
+"CMakeFiles/minirt.dir/scene/camera.c.o" \
+"CMakeFiles/minirt.dir/scene/scene.c.o" \
+"CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.o" \
+"CMakeFiles/minirt.dir/render.c.o"
 
 # External object files for target minirt
 minirt_EXTERNAL_OBJECTS =
 
 minirt: CMakeFiles/minirt.dir/main.c.o
 minirt: CMakeFiles/minirt.dir/linalg/vecalg.c.o
+minirt: CMakeFiles/minirt.dir/canvas/color.c.o
+minirt: CMakeFiles/minirt.dir/canvas/canvas.c.o
+minirt: CMakeFiles/minirt.dir/scene/light.c.o
+minirt: CMakeFiles/minirt.dir/scene/camera.c.o
+minirt: CMakeFiles/minirt.dir/scene/scene.c.o
+minirt: CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.o
+minirt: CMakeFiles/minirt.dir/render.c.o
 minirt: CMakeFiles/minirt.dir/build.make
 minirt: ../mlx/libmlx.a
 minirt: CMakeFiles/minirt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable minirt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/wrudy/Desktop/minirt 2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable minirt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minirt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
