@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../canvas/canvas.h
+../linalg/linalg.h
+../linalg/linalg.h
+
+../linalg/linalg.h
+stdlib.h
+../linalg/stdlib.h
+math.h
+../linalg/math.h
+
+/Users/wrudy/Desktop/minirt3/scene/scene_objects/objects.h
+linalg/linalg.h
+/Users/wrudy/Desktop/minirt3/scene/scene_objects/linalg/linalg.h
+canvas/canvas.h
+/Users/wrudy/Desktop/minirt3/scene/scene_objects/canvas/canvas.h
+
+/Users/wrudy/Desktop/minirt3/scene/scene_objects/square.c
+objects.h
+/Users/wrudy/Desktop/minirt3/scene/scene_objects/objects.h
+stdio.h
+/Users/wrudy/Desktop/minirt3/scene/scene_objects/stdio.h
+
