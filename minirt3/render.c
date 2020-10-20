@@ -21,8 +21,7 @@ t_canvas	*render(t_scene *scene, int camera_index)
 
 	width = scene->resolution_x;
 	height = scene->resolution_y;
-	if (!(canvas = new_canvas(width, height)))
-		return (NULL);
+	canvas = new_canvas(width, height);
 	while (height--)
 	{
 		width = scene->resolution_x;

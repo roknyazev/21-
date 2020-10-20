@@ -6,7 +6,7 @@
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 23:13:16 by wrudy             #+#    #+#             */
-/*   Updated: 2020/10/15 18:01:29 by wrudy            ###   ########.fr       */
+/*   Updated: 2020/10/17 21:54:35 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 t_plane		*new_plane(t_vector *pos, t_vector *normal ,t_color *color)
 {
 	t_plane *result;
+
 	if (!(result = malloc(sizeof(t_plane))))
-		return (NULL);
+		exit(EXIT_FAILURE);
 	result->color = color;
 	result->pos = pos;
 	normal->product_by_scalar(normal, 1./normal->magnitude(normal));
@@ -31,9 +32,8 @@ t_vector	*get_plane_normal(t_plane *self)
 {
 	t_vector *result;
 
-	if (!(result = new_vector(self->normal_vector->x, self->normal_vector->y,
-						   self->normal_vector->z)))
-		return (NULL);
+	result = new_vector(self->normal_vector->x, self->normal_vector->y,
+						   self->normal_vector->z);
 	return (result);
 }
 

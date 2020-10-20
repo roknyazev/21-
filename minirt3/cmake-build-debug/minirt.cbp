@@ -130,6 +130,9 @@
 		<Unit filename="/Users/wrudy/Desktop/minirt3/scene/scene.h">
 			<Option target="minirt"/>
 		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt3/scene/scene_objects/cylinder.c">
+			<Option target="minirt"/>
+		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/minirt3/scene/scene_objects/object.c">
 			<Option target="minirt"/>
 		</Unit>
@@ -143,6 +146,9 @@
 			<Option target="minirt"/>
 		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/minirt3/scene/scene_objects/square.c">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt3/scene/scene_objects/triangle.c">
 			<Option target="minirt"/>
 		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/minirt3/CMakeLists.txt">

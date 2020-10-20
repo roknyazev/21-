@@ -440,6 +440,33 @@ scene/scene.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene.c.s
 .PHONY : scene/scene.c.s
 
+scene/scene_objects/cylinder.o: scene/scene_objects/cylinder.c.o
+
+.PHONY : scene/scene_objects/cylinder.o
+
+# target to build an object file
+scene/scene_objects/cylinder.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o
+.PHONY : scene/scene_objects/cylinder.c.o
+
+scene/scene_objects/cylinder.i: scene/scene_objects/cylinder.c.i
+
+.PHONY : scene/scene_objects/cylinder.i
+
+# target to preprocess a source file
+scene/scene_objects/cylinder.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.i
+.PHONY : scene/scene_objects/cylinder.c.i
+
+scene/scene_objects/cylinder.s: scene/scene_objects/cylinder.c.s
+
+.PHONY : scene/scene_objects/cylinder.s
+
+# target to generate assembly for a file
+scene/scene_objects/cylinder.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.s
+.PHONY : scene/scene_objects/cylinder.c.s
+
 scene/scene_objects/object.o: scene/scene_objects/object.c.o
 
 .PHONY : scene/scene_objects/object.o
@@ -548,6 +575,33 @@ scene/scene_objects/square.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene_objects/square.c.s
 .PHONY : scene/scene_objects/square.c.s
 
+scene/scene_objects/triangle.o: scene/scene_objects/triangle.c.o
+
+.PHONY : scene/scene_objects/triangle.o
+
+# target to build an object file
+scene/scene_objects/triangle.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o
+.PHONY : scene/scene_objects/triangle.c.o
+
+scene/scene_objects/triangle.i: scene/scene_objects/triangle.c.i
+
+.PHONY : scene/scene_objects/triangle.i
+
+# target to preprocess a source file
+scene/scene_objects/triangle.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.i
+.PHONY : scene/scene_objects/triangle.c.i
+
+scene/scene_objects/triangle.s: scene/scene_objects/triangle.c.s
+
+.PHONY : scene/scene_objects/triangle.s
+
+# target to generate assembly for a file
+scene/scene_objects/triangle.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.s
+.PHONY : scene/scene_objects/triangle.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -590,6 +644,9 @@ help:
 	@echo "... scene/scene.o"
 	@echo "... scene/scene.i"
 	@echo "... scene/scene.s"
+	@echo "... scene/scene_objects/cylinder.o"
+	@echo "... scene/scene_objects/cylinder.i"
+	@echo "... scene/scene_objects/cylinder.s"
 	@echo "... scene/scene_objects/object.o"
 	@echo "... scene/scene_objects/object.i"
 	@echo "... scene/scene_objects/object.s"
@@ -602,6 +659,9 @@ help:
 	@echo "... scene/scene_objects/square.o"
 	@echo "... scene/scene_objects/square.i"
 	@echo "... scene/scene_objects/square.s"
+	@echo "... scene/scene_objects/triangle.o"
+	@echo "... scene/scene_objects/triangle.i"
+	@echo "... scene/scene_objects/triangle.s"
 .PHONY : help
 
 

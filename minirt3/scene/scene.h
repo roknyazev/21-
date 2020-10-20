@@ -6,7 +6,7 @@
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/21 22:09:27 by wrudy             #+#    #+#             */
-/*   Updated: 2020/09/25 20:16:59 by wrudy            ###   ########.fr       */
+/*   Updated: 2020/10/20 02:40:06 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,33 +66,25 @@ typedef struct	s_scene
 {
 	int 		resolution_x;
 	int 		resolution_y;
-
 	t_light		**light;
 	int 		lights_count;
-
 	t_amblight	*ambient_light;
-
 	t_camera	**camera;
 	int 		camera_count;
-
 	t_plane		**plane;
 	int 		plane_count;
-
 	t_cylinder	**cylinder;
 	int 		cylinder_count;
-
 	t_square	**square;
 	int 		square_count;
-
 	t_triangle	**triangle;
 	int 		triangle_count;
-
-	/* objects */
 	t_sphere	**sphere;
 	int 		sphere_count;
 	void 		(* destroy)(struct s_scene *self);
 }				t_scene;
 
 t_scene			*new_scene(char *path);
+void 			*parse(char *path, t_scene *scene);
 void 			scene_destructor(t_scene *self);
 #endif

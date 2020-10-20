@@ -17,10 +17,9 @@ t_color			*new_color(double r, double g, double b)
 	t_vector	*color;
 	t_color		*result;
 
-	if (!(color = new_vector(r, g, b)))
-		return (NULL);
+	color = new_vector(r, g, b);
 	if (!(result = malloc(sizeof(t_color))))
-		return (NULL);
+		exit(EXIT_FAILURE);
 	color->x = 255.;
 	color->y = 255.;
 	color->z = 255.;

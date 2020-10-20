@@ -272,6 +272,32 @@ CMakeFiles/minirt.dir/scene/scene_objects/square.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/scene/scene_objects/square.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wrudy/Desktop/minirt3/scene/scene_objects/square.c -o CMakeFiles/minirt.dir/scene/scene_objects/square.c.s
 
+CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o: ../scene/scene_objects/cylinder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o   -c /Users/wrudy/Desktop/minirt3/scene/scene_objects/cylinder.c
+
+CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/wrudy/Desktop/minirt3/scene/scene_objects/cylinder.c > CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.i
+
+CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wrudy/Desktop/minirt3/scene/scene_objects/cylinder.c -o CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.s
+
+CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o: ../scene/scene_objects/triangle.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o   -c /Users/wrudy/Desktop/minirt3/scene/scene_objects/triangle.c
+
+CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/wrudy/Desktop/minirt3/scene/scene_objects/triangle.c > CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.i
+
+CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wrudy/Desktop/minirt3/scene/scene_objects/triangle.c -o CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.s
+
 # Object files for target minirt
 minirt_OBJECTS = \
 "CMakeFiles/minirt.dir/main.c.o" \
@@ -288,7 +314,9 @@ minirt_OBJECTS = \
 "CMakeFiles/minirt.dir/raytrace/ray.c.o" \
 "CMakeFiles/minirt.dir/raytrace/intersection.c.o" \
 "CMakeFiles/minirt.dir/scene/scene_objects/plane.c.o" \
-"CMakeFiles/minirt.dir/scene/scene_objects/square.c.o"
+"CMakeFiles/minirt.dir/scene/scene_objects/square.c.o" \
+"CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o" \
+"CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o"
 
 # External object files for target minirt
 minirt_EXTERNAL_OBJECTS =
@@ -308,10 +336,12 @@ minirt: CMakeFiles/minirt.dir/raytrace/ray.c.o
 minirt: CMakeFiles/minirt.dir/raytrace/intersection.c.o
 minirt: CMakeFiles/minirt.dir/scene/scene_objects/plane.c.o
 minirt: CMakeFiles/minirt.dir/scene/scene_objects/square.c.o
+minirt: CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o
+minirt: CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o
 minirt: CMakeFiles/minirt.dir/build.make
 minirt: ../mlx/libmlx.a
 minirt: CMakeFiles/minirt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable minirt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable minirt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minirt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -6,7 +6,7 @@
 /*   By: wrudy <wrudy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/22 20:33:31 by wrudy             #+#    #+#             */
-/*   Updated: 2020/10/15 23:06:22 by wrudy            ###   ########.fr       */
+/*   Updated: 2020/10/19 21:58:32 by wrudy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,10 +107,10 @@ t_scene			*new_scene(char *path)
 
 	result->camera_count = 1;
 	result->camera = malloc(result->camera_count * sizeof(t_camera *));
-	camera_pos = new_vector(10, 6, -50);
-	//camera_orient = new_vector(-0.2, -0.6, 1);
-	camera_orient = new_vector(-0.2, 0, 1); //FIXME
-	fov =60;
+	camera_pos = new_vector(-30, 25, -45);
+	//camera_orient = new_vector(0, -1, 0);
+	camera_orient = new_vector(1, -1, 2); //FIXME
+	fov =70;
 	result->camera[0] = new_camera(camera_pos, camera_orient, fov, result->resolution_x);
 
 	result->plane_count = 1;
@@ -127,26 +127,56 @@ t_scene			*new_scene(char *path)
 	result->plane[0] = plane1;
 
 	result->square_count = 1;
-	result->square = malloc(result->square_count * sizeof(t_square *));
+	result->square = (t_square **)calloc(result->square_count, sizeof(t_square *));
+
 	t_vector *square_pos;
 	t_color *square_color;
 	t_vector *square_norm;
 	t_square *square;
 	square_pos = new_vector(0, 0, 0);
-	square_norm = new_vector(1, 1, 1);
-	square_color = new_color(0, 255, 255);
+	square_norm = new_vector(0.3, 1, 0);
+	square_color = new_color(70, 140, 180);
 	square = new_square(square_pos, square_norm, square_color, 10);
 
 	result->square[0] = square;
 
-	result->cylinder_count = 0;
-	result->triangle_count = 0;
+	result->cylinder_count = 1;
+
+	result->cylinder = (t_cylinder **)calloc(result->cylinder_count, sizeof(t_cylinder *));
+
+	t_vector *cylinder_pos;
+	t_color *cylinder_color;
+	t_vector *cylinder_norm;
+	t_cylinder *cylinder;
+	cylinder_pos = new_vector(-30, 0, -10);
+	cylinder_norm = new_vector(-0.265, 0, 1);
+	cylinder_color = new_color(10, 60, 80);
+	cylinder = new_cylinder(cylinder_pos, cylinder_norm, cylinder_color, 20);
+	result->cylinder[0] = cylinder;
+
+	result->triangle_count = 1;
+	result->triangle = (t_triangle **)calloc(result->triangle_count, sizeof(t_triangle *));
+	t_vector *triangle_pos1;
+	t_vector *triangle_pos2;
+	t_vector *triangle_pos3;
+	t_color *triangle_color;
+	t_triangle *triangle;
+	triangle_pos1 = new_vector(20, 0, -10);
+	triangle_pos2 = new_vector(10, 0, 10);
+	triangle_pos3 = new_vector(30, 15, 20);
+
+	triangle_color = new_color(100, 160, 80);
+	triangle = new_triangle(triangle_pos1, triangle_pos2, triangle_pos3, triangle_color);
+	result->triangle[0] = triangle;
+
+
+
 	result->sphere_count = 6;
-	result->sphere = malloc(result->sphere_count *  sizeof(t_sphere *));
+	result->sphere = (t_sphere **)malloc(result->sphere_count *  sizeof(t_sphere *));
 
 	sphere1_pos = new_vector(0, 0, -23);
 	sphere1_color = new_color(0xFF, 0xFF, 0xFF);
-	sphere1_diameter = 10;
+	sphere1_diameter = 17;
 
 	sphere2_pos = new_vector(0, 10, 0);
 	sphere2_color = new_color(250, 130, 0);
@@ -162,7 +192,7 @@ t_scene			*new_scene(char *path)
 
 	sphere5_pos = new_vector(0, 10, 20);
 	sphere5_color = new_color(220, 250, 10);
-	sphere5_diameter = 2;
+	sphere5_diameter = 8;
 
 	//sphere6_pos = new_vector(0, -5000, 0);
 	//sphere6_color = new_color(60, 25, 50);
@@ -177,7 +207,6 @@ t_scene			*new_scene(char *path)
 	result->sphere[2] = new_sphere(sphere3_pos, sphere3_color, sphere3_diameter);
 	result->sphere[3] = new_sphere(sphere4_pos, sphere4_color, sphere4_diameter);
 	result->sphere[4] = new_sphere(sphere5_pos, sphere5_color, sphere5_diameter);
-	//result->sphere[5] = new_sphere(sphere6_pos, sphere6_color, sphere6_diameter);
 	result->sphere[5] = new_sphere(sphere7_pos, sphere7_color, sphere7_diameter);
 
 	result->destroy = scene_destructor;

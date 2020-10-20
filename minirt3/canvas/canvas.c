@@ -18,9 +18,9 @@ t_canvas		*new_canvas(int width, int height)
 	t_color		**pixel_array;
 
 	if (!(result = malloc(sizeof(t_canvas))))
-		return (NULL);
+		exit(EXIT_FAILURE);
 	if (!(pixel_array = malloc(width * height * sizeof(t_color *))))
-		return (NULL);
+		exit(EXIT_FAILURE);
 	result->width = width;
 	result->height = height;
 	result->pixel_array = pixel_array;

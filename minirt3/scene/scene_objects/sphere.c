@@ -17,25 +17,13 @@ t_sphere		*new_sphere(t_vector *pos, t_color *color, double d)
 	t_sphere *result;
 
 	if (!(result = malloc(sizeof(t_sphere))))
-		return (NULL);
+		exit(EXIT_FAILURE);
 	result->pos = pos;
 	result->color = color;
 	result->diameter = d;
 	result->intersection = sphere_intersection;
 	result->get_normal = get_sphere_normal;
 	result->destroy = sphere_destructor;
-	return (result);
-}
-
-static double	check(double t1, double t2, double t_min, double t_max)
-{
-	double result;
-
-	result = t_max;
-	if (t1 > t_min && t1 < t_max)
-		result = t1;
-	if (t2 > t_min && t2 < t_max)
-		result = t2;
 	return (result);
 }
 
@@ -57,16 +45,15 @@ double			sphere_intersection(t_vector *o, t_vector *d, t_sphere *sphere)
 	discriminant = k2 * k2 - 4. * k1 * k3;
 	if (discriminant < 0.)
 		return (1e100);
-	return (check((-k2 + sqrt(discriminant)) / (2. * k1),
-			   (-k2 - sqrt(discriminant)) / (2. * k1), 1e-3, 1e100));
+	return (choice((-k2 + sqrt(discriminant)) / (2. * k1),
+				   (-k2 - sqrt(discriminant)) / (2. * k1), 1e-3, 1e100));
 }
 
 t_vector		*get_sphere_normal(struct s_sphere *self, t_vector *intersection_point)
 {
 	t_vector *result;
 
-	if (!(result = new_vector(0, 0, 0)))
-		return (NULL);
+	result = new_vector(0, 0, 0);
 	result = vec_diff(intersection_point, self->pos, result);
 	result->product_by_scalar(result, 1./result->magnitude(result));
 	return (result);

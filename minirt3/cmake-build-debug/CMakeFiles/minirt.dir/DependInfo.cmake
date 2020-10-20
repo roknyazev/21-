@@ -15,10 +15,12 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/wrudy/Desktop/minirt3/scene/camera.c" "/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles/minirt.dir/scene/camera.c.o"
   "/Users/wrudy/Desktop/minirt3/scene/light.c" "/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles/minirt.dir/scene/light.c.o"
   "/Users/wrudy/Desktop/minirt3/scene/scene.c" "/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles/minirt.dir/scene/scene.c.o"
+  "/Users/wrudy/Desktop/minirt3/scene/scene_objects/cylinder.c" "/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o"
   "/Users/wrudy/Desktop/minirt3/scene/scene_objects/object.c" "/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles/minirt.dir/scene/scene_objects/object.c.o"
   "/Users/wrudy/Desktop/minirt3/scene/scene_objects/plane.c" "/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles/minirt.dir/scene/scene_objects/plane.c.o"
   "/Users/wrudy/Desktop/minirt3/scene/scene_objects/sphere.c" "/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.o"
   "/Users/wrudy/Desktop/minirt3/scene/scene_objects/square.c" "/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles/minirt.dir/scene/scene_objects/square.c.o"
+  "/Users/wrudy/Desktop/minirt3/scene/scene_objects/triangle.c" "/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

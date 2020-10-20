@@ -73,6 +73,11 @@ CMakeFiles/minirt.dir/scene/scene.c.o
  /Users/wrudy/Desktop/minirt3/scene/scene.c
  /Users/wrudy/Desktop/minirt3/scene/scene.h
  /Users/wrudy/Desktop/minirt3/scene/scene_objects/objects.h
+CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o
+ ../canvas/canvas.h
+ ../linalg/linalg.h
+ /Users/wrudy/Desktop/minirt3/scene/scene_objects/cylinder.c
+ /Users/wrudy/Desktop/minirt3/scene/scene_objects/objects.h
 CMakeFiles/minirt.dir/scene/scene_objects/object.c.o
  ../canvas/canvas.h
  ../linalg/linalg.h
@@ -93,3 +98,8 @@ CMakeFiles/minirt.dir/scene/scene_objects/square.c.o
  ../linalg/linalg.h
  /Users/wrudy/Desktop/minirt3/scene/scene_objects/objects.h
  /Users/wrudy/Desktop/minirt3/scene/scene_objects/square.c
+CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o
+ ../canvas/canvas.h
+ ../linalg/linalg.h
+ /Users/wrudy/Desktop/minirt3/scene/scene_objects/objects.h
+ /Users/wrudy/Desktop/minirt3/scene/scene_objects/triangle.c

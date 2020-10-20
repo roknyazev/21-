@@ -17,7 +17,7 @@ t_vector	*new_vector(double x, double y, double z)
 	t_vector *result;
 
 	if (!(result = malloc(sizeof(t_vector))))
-		return (NULL);
+		exit(EXIT_FAILURE);
 	result->x = x;
 	result->y = y;
 	result->z = z;

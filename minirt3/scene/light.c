@@ -17,7 +17,7 @@ t_light			*new_light(t_vector *pos, t_color *color, double brightness)
 	t_light *result;
 
 	if (!(result = malloc(sizeof(t_light))))
-		return NULL;
+		exit(EXIT_FAILURE);
 	result->pos = pos;
 	result->color = color;
 	result->brightness = brightness;

@@ -73,6 +73,11 @@ CMakeFiles/minirt.dir/scene/scene.c.o: ../scene/scene.c
 CMakeFiles/minirt.dir/scene/scene.c.o: ../scene/scene.h
 CMakeFiles/minirt.dir/scene/scene.c.o: ../scene/scene_objects/objects.h
 
+CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o: ../canvas/canvas.h
+CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o: ../linalg/linalg.h
+CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o: ../scene/scene_objects/cylinder.c
+CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o: ../scene/scene_objects/objects.h
+
 CMakeFiles/minirt.dir/scene/scene_objects/object.c.o: ../canvas/canvas.h
 CMakeFiles/minirt.dir/scene/scene_objects/object.c.o: ../linalg/linalg.h
 CMakeFiles/minirt.dir/scene/scene_objects/object.c.o: ../scene/scene_objects/object.c
@@ -92,4 +97,9 @@ CMakeFiles/minirt.dir/scene/scene_objects/square.c.o: ../canvas/canvas.h
 CMakeFiles/minirt.dir/scene/scene_objects/square.c.o: ../linalg/linalg.h
 CMakeFiles/minirt.dir/scene/scene_objects/square.c.o: ../scene/scene_objects/objects.h
 CMakeFiles/minirt.dir/scene/scene_objects/square.c.o: ../scene/scene_objects/square.c
+
+CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o: ../canvas/canvas.h
+CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o: ../linalg/linalg.h
+CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o: ../scene/scene_objects/objects.h
+CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o: ../scene/scene_objects/triangle.c
 

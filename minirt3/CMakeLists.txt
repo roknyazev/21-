@@ -13,7 +13,7 @@ include_directories(.)
 include_directories(mlx)
 
 #FILE(GLOB SOURCES *.c src/*.c)
-add_executable(minirt main.c minirt.h linalg/linalg.h linalg/vecalg.c canvas/canvas.h canvas/color.c canvas/canvas.c scene/scene.h scene/scene_objects/objects.h scene/light.c scene/camera.c scene/scene.c scene/scene_objects/sphere.c render.c raytrace/raytrace.c scene/scene_objects/object.c raytrace/raytrace.h raytrace/ray.c raytrace/intersection.c scene/scene_objects/plane.c scene/scene_objects/square.c)
+add_executable(minirt main.c minirt.h linalg/linalg.h linalg/vecalg.c canvas/canvas.h canvas/color.c canvas/canvas.c scene/scene.h scene/scene_objects/objects.h scene/light.c scene/camera.c scene/scene.c scene/scene_objects/sphere.c render.c raytrace/raytrace.c scene/scene_objects/object.c raytrace/raytrace.h raytrace/ray.c raytrace/intersection.c scene/scene_objects/plane.c scene/scene_objects/square.c scene/scene_objects/cylinder.c scene/scene_objects/triangle.c)
 #add_subdirectory(libft)
 #target_link_libraries(minirt lib)
 add_library(mlx STATIC IMPORTED)

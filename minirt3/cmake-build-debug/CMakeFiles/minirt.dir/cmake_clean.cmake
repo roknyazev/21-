@@ -10,10 +10,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/minirt.dir/scene/camera.c.o"
   "CMakeFiles/minirt.dir/scene/light.c.o"
   "CMakeFiles/minirt.dir/scene/scene.c.o"
+  "CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o"
   "CMakeFiles/minirt.dir/scene/scene_objects/object.c.o"
   "CMakeFiles/minirt.dir/scene/scene_objects/plane.c.o"
   "CMakeFiles/minirt.dir/scene/scene_objects/sphere.c.o"
   "CMakeFiles/minirt.dir/scene/scene_objects/square.c.o"
+  "CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o"
   "minirt"
   "minirt.pdb"
 )

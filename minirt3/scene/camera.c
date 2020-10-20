@@ -17,7 +17,7 @@ t_camera		*new_camera(t_vector *pos, t_vector *orient, double fov, int width)
 	t_camera *result;
 
 	if (!(result = malloc(sizeof(t_camera))))
-		return (NULL);
+		exit(EXIT_FAILURE);
 	result->pos = pos;
 	result->orient = orient;
 	result->fov = fov;
