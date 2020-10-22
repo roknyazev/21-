@@ -91,6 +91,15 @@
 		<Unit filename="/Users/wrudy/Desktop/minirt3/canvas/color.c">
 			<Option target="minirt"/>
 		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt3/gnl/get_next_line.c">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt3/gnl/get_next_line.h">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt3/gnl/get_next_line_utils.c">
+			<Option target="minirt"/>
+		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/minirt3/linalg/linalg.h">
 			<Option target="minirt"/>
 		</Unit>
@@ -122,6 +131,15 @@
 			<Option target="minirt"/>
 		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/minirt3/scene/light.c">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt3/scene/parse.c">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt3/scene/parse_objects1.c">
+			<Option target="minirt"/>
+		</Unit>
+		<Unit filename="/Users/wrudy/Desktop/minirt3/scene/parse_utils.c">
 			<Option target="minirt"/>
 		</Unit>
 		<Unit filename="/Users/wrudy/Desktop/minirt3/scene/scene.c">

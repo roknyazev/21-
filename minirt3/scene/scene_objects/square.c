@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "objects.h"
-#include "stdio.h"
 
 t_square		*new_square(t_vector *pos, t_vector *normal, t_color *color, double side_size)
 {
@@ -50,6 +49,7 @@ double			square_intersection(t_vector *o, t_vector *d, t_square *square)
 	p = new_vector(0, 0, 0);
 	p = multiplication_by_scalar(d, t, p);
 	p = vec_sum(o, p, p);
+	vec_diff(p, square->pos, p);
 	tmp = new_vector(1e-100, 1, 1e-100);
 	e1 = cross_product(tmp, square->normal_vector);
 	tmp->destroy(tmp);

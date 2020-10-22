@@ -298,6 +298,71 @@ CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wrudy/Desktop/minirt3/scene/scene_objects/triangle.c -o CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.s
 
+CMakeFiles/minirt.dir/scene/parse.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/scene/parse.c.o: ../scene/parse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/minirt.dir/scene/parse.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/scene/parse.c.o   -c /Users/wrudy/Desktop/minirt3/scene/parse.c
+
+CMakeFiles/minirt.dir/scene/parse.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/scene/parse.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/wrudy/Desktop/minirt3/scene/parse.c > CMakeFiles/minirt.dir/scene/parse.c.i
+
+CMakeFiles/minirt.dir/scene/parse.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/scene/parse.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wrudy/Desktop/minirt3/scene/parse.c -o CMakeFiles/minirt.dir/scene/parse.c.s
+
+CMakeFiles/minirt.dir/gnl/get_next_line.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/gnl/get_next_line.c.o: ../gnl/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/minirt.dir/gnl/get_next_line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/gnl/get_next_line.c.o   -c /Users/wrudy/Desktop/minirt3/gnl/get_next_line.c
+
+CMakeFiles/minirt.dir/gnl/get_next_line.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/gnl/get_next_line.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/wrudy/Desktop/minirt3/gnl/get_next_line.c > CMakeFiles/minirt.dir/gnl/get_next_line.c.i
+
+CMakeFiles/minirt.dir/gnl/get_next_line.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/gnl/get_next_line.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wrudy/Desktop/minirt3/gnl/get_next_line.c -o CMakeFiles/minirt.dir/gnl/get_next_line.c.s
+
+CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.o: ../gnl/get_next_line_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.o   -c /Users/wrudy/Desktop/minirt3/gnl/get_next_line_utils.c
+
+CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/wrudy/Desktop/minirt3/gnl/get_next_line_utils.c > CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.i
+
+CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wrudy/Desktop/minirt3/gnl/get_next_line_utils.c -o CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.s
+
+CMakeFiles/minirt.dir/scene/parse_objects1.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/scene/parse_objects1.c.o: ../scene/parse_objects1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/minirt.dir/scene/parse_objects1.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/scene/parse_objects1.c.o   -c /Users/wrudy/Desktop/minirt3/scene/parse_objects1.c
+
+CMakeFiles/minirt.dir/scene/parse_objects1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/scene/parse_objects1.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/wrudy/Desktop/minirt3/scene/parse_objects1.c > CMakeFiles/minirt.dir/scene/parse_objects1.c.i
+
+CMakeFiles/minirt.dir/scene/parse_objects1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/scene/parse_objects1.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wrudy/Desktop/minirt3/scene/parse_objects1.c -o CMakeFiles/minirt.dir/scene/parse_objects1.c.s
+
+CMakeFiles/minirt.dir/scene/parse_utils.c.o: CMakeFiles/minirt.dir/flags.make
+CMakeFiles/minirt.dir/scene/parse_utils.c.o: ../scene/parse_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/minirt.dir/scene/parse_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/minirt.dir/scene/parse_utils.c.o   -c /Users/wrudy/Desktop/minirt3/scene/parse_utils.c
+
+CMakeFiles/minirt.dir/scene/parse_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/minirt.dir/scene/parse_utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/wrudy/Desktop/minirt3/scene/parse_utils.c > CMakeFiles/minirt.dir/scene/parse_utils.c.i
+
+CMakeFiles/minirt.dir/scene/parse_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/minirt.dir/scene/parse_utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/wrudy/Desktop/minirt3/scene/parse_utils.c -o CMakeFiles/minirt.dir/scene/parse_utils.c.s
+
 # Object files for target minirt
 minirt_OBJECTS = \
 "CMakeFiles/minirt.dir/main.c.o" \
@@ -316,7 +381,12 @@ minirt_OBJECTS = \
 "CMakeFiles/minirt.dir/scene/scene_objects/plane.c.o" \
 "CMakeFiles/minirt.dir/scene/scene_objects/square.c.o" \
 "CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o" \
-"CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o"
+"CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o" \
+"CMakeFiles/minirt.dir/scene/parse.c.o" \
+"CMakeFiles/minirt.dir/gnl/get_next_line.c.o" \
+"CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.o" \
+"CMakeFiles/minirt.dir/scene/parse_objects1.c.o" \
+"CMakeFiles/minirt.dir/scene/parse_utils.c.o"
 
 # External object files for target minirt
 minirt_EXTERNAL_OBJECTS =
@@ -338,10 +408,15 @@ minirt: CMakeFiles/minirt.dir/scene/scene_objects/plane.c.o
 minirt: CMakeFiles/minirt.dir/scene/scene_objects/square.c.o
 minirt: CMakeFiles/minirt.dir/scene/scene_objects/cylinder.c.o
 minirt: CMakeFiles/minirt.dir/scene/scene_objects/triangle.c.o
+minirt: CMakeFiles/minirt.dir/scene/parse.c.o
+minirt: CMakeFiles/minirt.dir/gnl/get_next_line.c.o
+minirt: CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.o
+minirt: CMakeFiles/minirt.dir/scene/parse_objects1.c.o
+minirt: CMakeFiles/minirt.dir/scene/parse_utils.c.o
 minirt: CMakeFiles/minirt.dir/build.make
 minirt: ../mlx/libmlx.a
 minirt: CMakeFiles/minirt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable minirt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wrudy/Desktop/minirt3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking C executable minirt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minirt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

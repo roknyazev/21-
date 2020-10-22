@@ -197,6 +197,60 @@ canvas/color.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/canvas/color.c.s
 .PHONY : canvas/color.c.s
 
+gnl/get_next_line.o: gnl/get_next_line.c.o
+
+.PHONY : gnl/get_next_line.o
+
+# target to build an object file
+gnl/get_next_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/gnl/get_next_line.c.o
+.PHONY : gnl/get_next_line.c.o
+
+gnl/get_next_line.i: gnl/get_next_line.c.i
+
+.PHONY : gnl/get_next_line.i
+
+# target to preprocess a source file
+gnl/get_next_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/gnl/get_next_line.c.i
+.PHONY : gnl/get_next_line.c.i
+
+gnl/get_next_line.s: gnl/get_next_line.c.s
+
+.PHONY : gnl/get_next_line.s
+
+# target to generate assembly for a file
+gnl/get_next_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/gnl/get_next_line.c.s
+.PHONY : gnl/get_next_line.c.s
+
+gnl/get_next_line_utils.o: gnl/get_next_line_utils.c.o
+
+.PHONY : gnl/get_next_line_utils.o
+
+# target to build an object file
+gnl/get_next_line_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.o
+.PHONY : gnl/get_next_line_utils.c.o
+
+gnl/get_next_line_utils.i: gnl/get_next_line_utils.c.i
+
+.PHONY : gnl/get_next_line_utils.i
+
+# target to preprocess a source file
+gnl/get_next_line_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.i
+.PHONY : gnl/get_next_line_utils.c.i
+
+gnl/get_next_line_utils.s: gnl/get_next_line_utils.c.s
+
+.PHONY : gnl/get_next_line_utils.s
+
+# target to generate assembly for a file
+gnl/get_next_line_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.s
+.PHONY : gnl/get_next_line_utils.c.s
+
 linalg/vecalg.o: linalg/vecalg.c.o
 
 .PHONY : linalg/vecalg.o
@@ -413,6 +467,87 @@ scene/light.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/light.c.s
 .PHONY : scene/light.c.s
 
+scene/parse.o: scene/parse.c.o
+
+.PHONY : scene/parse.o
+
+# target to build an object file
+scene/parse.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/parse.c.o
+.PHONY : scene/parse.c.o
+
+scene/parse.i: scene/parse.c.i
+
+.PHONY : scene/parse.i
+
+# target to preprocess a source file
+scene/parse.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/parse.c.i
+.PHONY : scene/parse.c.i
+
+scene/parse.s: scene/parse.c.s
+
+.PHONY : scene/parse.s
+
+# target to generate assembly for a file
+scene/parse.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/parse.c.s
+.PHONY : scene/parse.c.s
+
+scene/parse_objects1.o: scene/parse_objects1.c.o
+
+.PHONY : scene/parse_objects1.o
+
+# target to build an object file
+scene/parse_objects1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/parse_objects1.c.o
+.PHONY : scene/parse_objects1.c.o
+
+scene/parse_objects1.i: scene/parse_objects1.c.i
+
+.PHONY : scene/parse_objects1.i
+
+# target to preprocess a source file
+scene/parse_objects1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/parse_objects1.c.i
+.PHONY : scene/parse_objects1.c.i
+
+scene/parse_objects1.s: scene/parse_objects1.c.s
+
+.PHONY : scene/parse_objects1.s
+
+# target to generate assembly for a file
+scene/parse_objects1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/parse_objects1.c.s
+.PHONY : scene/parse_objects1.c.s
+
+scene/parse_utils.o: scene/parse_utils.c.o
+
+.PHONY : scene/parse_utils.o
+
+# target to build an object file
+scene/parse_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/parse_utils.c.o
+.PHONY : scene/parse_utils.c.o
+
+scene/parse_utils.i: scene/parse_utils.c.i
+
+.PHONY : scene/parse_utils.i
+
+# target to preprocess a source file
+scene/parse_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/parse_utils.c.i
+.PHONY : scene/parse_utils.c.i
+
+scene/parse_utils.s: scene/parse_utils.c.s
+
+.PHONY : scene/parse_utils.s
+
+# target to generate assembly for a file
+scene/parse_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minirt.dir/build.make CMakeFiles/minirt.dir/scene/parse_utils.c.s
+.PHONY : scene/parse_utils.c.s
+
 scene/scene.o: scene/scene.c.o
 
 .PHONY : scene/scene.o
@@ -617,6 +752,12 @@ help:
 	@echo "... canvas/color.o"
 	@echo "... canvas/color.i"
 	@echo "... canvas/color.s"
+	@echo "... gnl/get_next_line.o"
+	@echo "... gnl/get_next_line.i"
+	@echo "... gnl/get_next_line.s"
+	@echo "... gnl/get_next_line_utils.o"
+	@echo "... gnl/get_next_line_utils.i"
+	@echo "... gnl/get_next_line_utils.s"
 	@echo "... linalg/vecalg.o"
 	@echo "... linalg/vecalg.i"
 	@echo "... linalg/vecalg.s"
@@ -641,6 +782,15 @@ help:
 	@echo "... scene/light.o"
 	@echo "... scene/light.i"
 	@echo "... scene/light.s"
+	@echo "... scene/parse.o"
+	@echo "... scene/parse.i"
+	@echo "... scene/parse.s"
+	@echo "... scene/parse_objects1.o"
+	@echo "... scene/parse_objects1.i"
+	@echo "... scene/parse_objects1.s"
+	@echo "... scene/parse_utils.o"
+	@echo "... scene/parse_utils.i"
+	@echo "... scene/parse_utils.s"
 	@echo "... scene/scene.o"
 	@echo "... scene/scene.i"
 	@echo "... scene/scene.s"

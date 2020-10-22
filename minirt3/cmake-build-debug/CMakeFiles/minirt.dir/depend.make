@@ -9,10 +9,17 @@ CMakeFiles/minirt.dir/canvas/color.c.o: ../canvas/canvas.h
 CMakeFiles/minirt.dir/canvas/color.c.o: ../canvas/color.c
 CMakeFiles/minirt.dir/canvas/color.c.o: ../linalg/linalg.h
 
+CMakeFiles/minirt.dir/gnl/get_next_line.c.o: ../gnl/get_next_line.c
+CMakeFiles/minirt.dir/gnl/get_next_line.c.o: ../gnl/get_next_line.h
+
+CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.o: ../gnl/get_next_line.h
+CMakeFiles/minirt.dir/gnl/get_next_line_utils.c.o: ../gnl/get_next_line_utils.c
+
 CMakeFiles/minirt.dir/linalg/vecalg.c.o: ../linalg/linalg.h
 CMakeFiles/minirt.dir/linalg/vecalg.c.o: ../linalg/vecalg.c
 
 CMakeFiles/minirt.dir/main.c.o: ../canvas/canvas.h
+CMakeFiles/minirt.dir/main.c.o: ../gnl/get_next_line.h
 CMakeFiles/minirt.dir/main.c.o: ../linalg/linalg.h
 CMakeFiles/minirt.dir/main.c.o: ../main.c
 CMakeFiles/minirt.dir/main.c.o: ../minirt.h
@@ -22,6 +29,7 @@ CMakeFiles/minirt.dir/main.c.o: ../scene/scene.h
 CMakeFiles/minirt.dir/main.c.o: ../scene/scene_objects/objects.h
 
 CMakeFiles/minirt.dir/raytrace/intersection.c.o: ../canvas/canvas.h
+CMakeFiles/minirt.dir/raytrace/intersection.c.o: ../gnl/get_next_line.h
 CMakeFiles/minirt.dir/raytrace/intersection.c.o: ../linalg/linalg.h
 CMakeFiles/minirt.dir/raytrace/intersection.c.o: ../minirt.h
 CMakeFiles/minirt.dir/raytrace/intersection.c.o: ../raytrace/raytrace.h
@@ -32,6 +40,7 @@ CMakeFiles/minirt.dir/raytrace/intersection.c.o: ../raytrace/intersection.c
 CMakeFiles/minirt.dir/raytrace/ray.c.o: ../canvas/canvas.h
 CMakeFiles/minirt.dir/raytrace/ray.c.o: ../linalg/linalg.h
 CMakeFiles/minirt.dir/raytrace/ray.c.o: ../canvas/canvas.h
+CMakeFiles/minirt.dir/raytrace/ray.c.o: ../gnl/get_next_line.h
 CMakeFiles/minirt.dir/raytrace/ray.c.o: ../linalg/linalg.h
 CMakeFiles/minirt.dir/raytrace/ray.c.o: ../raytrace/ray.c
 CMakeFiles/minirt.dir/raytrace/ray.c.o: ../raytrace/raytrace.h
@@ -41,6 +50,7 @@ CMakeFiles/minirt.dir/raytrace/ray.c.o: ../scene/scene_objects/objects.h
 CMakeFiles/minirt.dir/raytrace/raytrace.c.o: ../canvas/canvas.h
 CMakeFiles/minirt.dir/raytrace/raytrace.c.o: ../linalg/linalg.h
 CMakeFiles/minirt.dir/raytrace/raytrace.c.o: ../canvas/canvas.h
+CMakeFiles/minirt.dir/raytrace/raytrace.c.o: ../gnl/get_next_line.h
 CMakeFiles/minirt.dir/raytrace/raytrace.c.o: ../linalg/linalg.h
 CMakeFiles/minirt.dir/raytrace/raytrace.c.o: ../raytrace/raytrace.c
 CMakeFiles/minirt.dir/raytrace/raytrace.c.o: ../raytrace/raytrace.h
@@ -48,6 +58,7 @@ CMakeFiles/minirt.dir/raytrace/raytrace.c.o: ../scene/scene.h
 CMakeFiles/minirt.dir/raytrace/raytrace.c.o: ../scene/scene_objects/objects.h
 
 CMakeFiles/minirt.dir/render.c.o: ../canvas/canvas.h
+CMakeFiles/minirt.dir/render.c.o: ../gnl/get_next_line.h
 CMakeFiles/minirt.dir/render.c.o: ../linalg/linalg.h
 CMakeFiles/minirt.dir/render.c.o: ../minirt.h
 CMakeFiles/minirt.dir/render.c.o: ../raytrace/raytrace.h
@@ -57,18 +68,42 @@ CMakeFiles/minirt.dir/render.c.o: ../scene/scene_objects/objects.h
 
 CMakeFiles/minirt.dir/scene/camera.c.o: ../canvas/canvas.h
 CMakeFiles/minirt.dir/scene/camera.c.o: ../linalg/linalg.h
+CMakeFiles/minirt.dir/scene/camera.c.o: ../gnl/get_next_line.h
 CMakeFiles/minirt.dir/scene/camera.c.o: ../scene/camera.c
 CMakeFiles/minirt.dir/scene/camera.c.o: ../scene/scene.h
 CMakeFiles/minirt.dir/scene/camera.c.o: ../scene/scene_objects/objects.h
 
 CMakeFiles/minirt.dir/scene/light.c.o: ../canvas/canvas.h
 CMakeFiles/minirt.dir/scene/light.c.o: ../linalg/linalg.h
+CMakeFiles/minirt.dir/scene/light.c.o: ../gnl/get_next_line.h
 CMakeFiles/minirt.dir/scene/light.c.o: ../scene/light.c
 CMakeFiles/minirt.dir/scene/light.c.o: ../scene/scene.h
 CMakeFiles/minirt.dir/scene/light.c.o: ../scene/scene_objects/objects.h
 
+CMakeFiles/minirt.dir/scene/parse.c.o: ../canvas/canvas.h
+CMakeFiles/minirt.dir/scene/parse.c.o: ../linalg/linalg.h
+CMakeFiles/minirt.dir/scene/parse.c.o: ../gnl/get_next_line.h
+CMakeFiles/minirt.dir/scene/parse.c.o: ../scene/parse.c
+CMakeFiles/minirt.dir/scene/parse.c.o: ../scene/scene.h
+CMakeFiles/minirt.dir/scene/parse.c.o: ../scene/scene_objects/objects.h
+
+CMakeFiles/minirt.dir/scene/parse_objects1.c.o: ../canvas/canvas.h
+CMakeFiles/minirt.dir/scene/parse_objects1.c.o: ../linalg/linalg.h
+CMakeFiles/minirt.dir/scene/parse_objects1.c.o: ../gnl/get_next_line.h
+CMakeFiles/minirt.dir/scene/parse_objects1.c.o: ../scene/parse_objects1.c
+CMakeFiles/minirt.dir/scene/parse_objects1.c.o: ../scene/scene.h
+CMakeFiles/minirt.dir/scene/parse_objects1.c.o: ../scene/scene_objects/objects.h
+
+CMakeFiles/minirt.dir/scene/parse_utils.c.o: ../canvas/canvas.h
+CMakeFiles/minirt.dir/scene/parse_utils.c.o: ../linalg/linalg.h
+CMakeFiles/minirt.dir/scene/parse_utils.c.o: ../gnl/get_next_line.h
+CMakeFiles/minirt.dir/scene/parse_utils.c.o: ../scene/parse_utils.c
+CMakeFiles/minirt.dir/scene/parse_utils.c.o: ../scene/scene.h
+CMakeFiles/minirt.dir/scene/parse_utils.c.o: ../scene/scene_objects/objects.h
+
 CMakeFiles/minirt.dir/scene/scene.c.o: ../canvas/canvas.h
 CMakeFiles/minirt.dir/scene/scene.c.o: ../linalg/linalg.h
+CMakeFiles/minirt.dir/scene/scene.c.o: ../gnl/get_next_line.h
 CMakeFiles/minirt.dir/scene/scene.c.o: ../scene/scene.c
 CMakeFiles/minirt.dir/scene/scene.c.o: ../scene/scene.h
 CMakeFiles/minirt.dir/scene/scene.c.o: ../scene/scene_objects/objects.h
